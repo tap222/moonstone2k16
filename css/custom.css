@@ -454,7 +454,6 @@ nav .navbar-right {
     line-height: 32px;
     color: #7d7d7d;
 }
-
 .carousel-caption {
     bottom: 30em;
     text-align: right;
@@ -1162,4 +1161,50 @@ footer .footer_social ul li i {
 }
 .element {
     width: 100%;
+}
+
+.register-form-wrapper
+{
+    height: 1000px;
+    padding-top: 60px;
+    /*background-image: url('../img/banner_img.jpg');*/
+    background: #353535;
+}
+.register-form-wrapper form
+{
+    width: 40%;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+.register-form-wrapper label
+{
+    /*width: 20%;*/
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #AAA;
+    /*text-shadow: 0 0 2px black;*/
+    display: block;
+}
+.register-form-wrapper label>.required
+{
+    color: #c62828;
+}
+.register-form-wrapper input,select
+{
+    border-radius: 1px;
+    background: #555;
+    outline: none;
+    /*border: 1px solid #474747;*/
+    border: none;
+    /*box-shadow: inset 0px 0px 5px #555;*/
+    width: 100%;
+    font-size: 18px;
+    margin: 5px 0 10px;
+    padding: 2px 10px;
+    color: #AAA;
+}
+.register-form-wrapper input:focus
+{
+    background: #888;
 }
