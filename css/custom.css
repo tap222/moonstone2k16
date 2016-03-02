@@ -1166,15 +1166,17 @@ footer .footer_social ul li i {
 .register-form-wrapper
 {
     height: 1000px;
-    padding-top: 60px;
+
     /*background-image: url('../img/banner_img.jpg');*/
-    background: #353535;
+    /*background: #353535;*/
+    background: rgba(15,15,15, 0.6);
 }
 .register-form-wrapper form
 {
     width: 40%;
-    margin: 0 auto;
-    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    padding-top: 60px;
+    text-align: left;
 }
 .register-form-wrapper label
 {
@@ -1182,7 +1184,7 @@ footer .footer_social ul li i {
     text-align: left;
     font-size: 20px;
     font-weight: 400;
-    color: #AAA;
+    color: #EEE;
     /*text-shadow: 0 0 2px black;*/
     display: block;
 }
@@ -1193,20 +1195,21 @@ footer .footer_social ul li i {
 .register-form-wrapper input,select
 {
     border-radius: 1px;
-    background: #555;
+    background: transparent;
     outline: none;
-    /*border: 1px solid #474747;*/
-    border: none;
-    /*box-shadow: inset 0px 0px 5px #555;*/
+    border: 2px solid #888;
+    /*border: none;*/
+    box-shadow: 0px 0px 2px #555;
     width: 100%;
     font-size: 18px;
     margin: 5px 0 10px;
     padding: 2px 10px;
     color: #AAA;
+    border
 }
 .register-form-wrapper input:focus
 {
-    background: #888;
+    background: #555;
 }
 .nav-temp-class .dropdown
 {
@@ -1239,4 +1242,17 @@ footer .footer_social ul li i {
     left: 10px;
     top: 13px;
     color: #777;
+}
+
+.register-form-wrapper
+{
+    position: relative;
+}
+.register-form-wrapper-overlay
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('../img/1.jpeg');
 }
