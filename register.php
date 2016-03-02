@@ -129,7 +129,7 @@
                 <label>Name<span class='required'>*</span></label>
                 <input type="text" name="name_of_person" value="" placeholder="" class="">
                 <label>Email<span class='required'>*</span></label>
-                <input type="text" name="email_of_person" value="" placeholder="" class="">
+                <input type="email" name="email_of_person" value="" placeholder="" class="">
                 <label>Phone<span class='required'>*</span></label>
                 <input type="text" name="phone_of_person" value="" placeholder="" class="">
                 <label>College<span class='required'>*</span></label>
