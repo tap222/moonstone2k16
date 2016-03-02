@@ -1151,6 +1151,19 @@ footer .footer_social ul li i {
         transform: scale(1);
     }
 }
+.home-background-image
+{
+    height: 100%;
+
+}
+.background-image-home
+{
+    transition: 0.5s;
+    background: url("../img/1.jpeg");
+    background-position: center;
+    min-height: 900px;
+    width:100%;
+}
 .footer {
     bottom: 0px;
     height: auto;
@@ -1258,6 +1271,7 @@ footer .footer_social ul li i {
     width: 100%;
     z-index: -1;
     background: url('../img/1.jpeg');
+    transition: 0.5s ease-out;
 }
 
 .event-wrapper
