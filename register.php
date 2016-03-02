@@ -198,6 +198,12 @@
             <form action="register.php" method="post" accept-charset="utf-8" class="form-group">
                 <label>Name<span class='required'>*</span></label>
                 <input type="text" name="name_of_person" value="" placeholder="" class="">
+                <label>Gender<span class='required'>*</span></label>
+                <select type="text" name="gender" value="" placeholder="" class="">
+                    <option selected>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
                 <label>Email<span class='required'>*</span></label>
                 <input type="email" name="email_of_person" value="" placeholder="" class="">
                 <label>Phone<span class='required'>*</span></label>
@@ -217,14 +223,25 @@
                     <option>Event 4</option>
                 </select>
 
-               <input type="submit" class="btn bt-success" value="Submit">
+               <input type="submit" style="background: #356535; border:none" value="Submit">
 
                  <?php
 
 
-                    if(@isset($_POST['name_of_person'])&& @isset($_POST['email_of_person']) && @isset($_POST['phone_of_person']) && @isset($_POST['college_of_person']) && @isset($_POST['branch_of_person']) && @isset($_POST['year_of_person']) && @isset($_POST['event_intrested']))
+                        if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                            echo 'Connection Successful!<br> ';
+                            }
+    
+                
+                    if(@isset($_POST['name_of_person'])&& @isset($_POST['gender']) && @isset($_POST['email_of_person']) && @isset($_POST['phone_of_person']) && @isset($_POST['college_of_person']) && @isset($_POST['branch_of_person']) && @isset($_POST['year_of_person']) && @isset($_POST['event_intrested']))
                     {
                         $name = (string)$_POST['name_of_person'];
+                        $gender = (string)$_POST['gender'];
                         $email = (string)$_POST['email_of_person'];
                         $phone = (string)$_POST['phone_of_person'];
                         $college = (string)$_POST['college_of_person'];
@@ -232,7 +249,14 @@
                         $year = (string)$_POST['year_of_person'];
                         $eventin = (string)$_POST['event_intrested'];
                         if(!empty($name) && !empty($email) && !empty($phone)&& !empty($college)&& !empty($branch)&& !empty($year)&& !empty($eventin)){
-                            echo $name. "<br>" . $email;
+                            $query1 = "INSERT into registration VALUES ('', '$name' , '$email' , '$phone', '$college', '$branch' , '$year' , '$eventin', '$gender')";
+                            if(@mysql_query($query1)){
+                                echo 'Data Submitted';
+                            }
+                            else
+                            {
+                                echo 'Submission Failed';
+                            }
                         }
                         else
                         {
