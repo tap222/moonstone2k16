@@ -1326,7 +1326,7 @@ footer .footer_social ul li i {
 
 .description
 {
-    padding: 20px 30px;
+    padding: 50px 50px;
     display: flex;
 }
 .description > .main
@@ -1336,5 +1336,23 @@ footer .footer_social ul li i {
 .description .heading
 {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 25px;
+}
+.main > .venue-content
+{
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+.main > .description-content
+{
+    font-size: 17px;
+}
+.main > .venue-content, .description-content
+{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.aside > .horizontal-separator
+{
+    height: 100%;
 }
