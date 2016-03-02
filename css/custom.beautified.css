@@ -454,6 +454,7 @@ nav .navbar-right {
     line-height: 32px;
     color: #7d7d7d;
 }
+
 .carousel-caption {
     bottom: 30em;
     text-align: right;
@@ -971,9 +972,6 @@ footer .footer_social ul li i {
     .mega-menu li.mega-menu-column {
         width: 70%;
     }
-    .carousel-caption{
-        text-align: center;
-    }
 }
 
 @media (min-width: 600px) and (max-width: 640px) {
@@ -1134,7 +1132,7 @@ footer .footer_social ul li i {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
-
+    
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -1145,7 +1143,7 @@ footer .footer_social ul li i {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
-
+    
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -1164,163 +1162,4 @@ footer .footer_social ul li i {
 }
 .element {
     width: 100%;
-}
-
-.register-form-wrapper
-{
-    height: 1000px;
-
-    /*background-image: url('../img/banner_img.jpg');*/
-    /*background: #353535;*/
-    background: rgba(15,15,15, 0.6);
-}
-.register-form-wrapper form
-{
-    width: 40%;
-    /*margin: 0 auto;*/
-    padding-top: 60px;
-    text-align: left;
-}
-.register-form-wrapper label
-{
-    /*width: 20%;*/
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #EEE;
-    /*text-shadow: 0 0 2px black;*/
-    display: block;
-}
-.register-form-wrapper label>.required
-{
-    color: #c62828;
-}
-.register-form-wrapper input,select
-{
-    border-radius: 1px;
-    background: transparent;
-    outline: none;
-    border: 2px solid #888;
-    /*border: none;*/
-    box-shadow: 0px 0px 2px #555;
-    width: 100%;
-    font-size: 18px;
-    margin: 5px 0 10px;
-    padding: 2px 10px;
-    color: #AAA;
-    border
-}
-.register-form-wrapper input:focus
-{
-    background: #555;
-}
-.nav-temp-class .dropdown
-{
-    margin: 0;
-}
-.nav-temp-class .dropdown .caret
-{
-    display: none;
-}
-.navbar
-{
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
-    margin: 0;
-}
-.nav-temp-class form[role='search'] input
-{
-    background: white;
-    border-radius: 20px;
-    display: inline-block;
-    padding-left: 30px;
-    margin-top: 3px;
-}
-.nav-temp-class form[role='search']
-{
-    position: relative;
-}
-.nav-temp-class form[role='search'] i
-{
-    position: absolute;
-    left: 10px;
-    top: 13px;
-    color: #777;
-}
-
-.register-form-wrapper
-{
-    position: relative;
-}
-.register-form-wrapper-overlay
-{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: url('../img/1.jpeg');
-}
-
-.event-wrapper
-{
-    position: relative;
-}
-.event-wrapper >.cover
-{
-    width: 100%;
-    height: 250px;
-    background: url("https://unsplash.it/1400/1000?random");
-    background-position: bottom;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.event-wrapper > .cover-overlay
-{
-    width: 100%;
-    height: 250px;
-    display: flex;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    font-weight: 600;
-    padding: 80px 40px 0;
-    text-shadow: 0 0 2px #000;
-}
-.event-wrapper > .cover-overlay > .event-title
-{
-    flex: 3;
-}
-.event-title > span
-{
-    font-size: 50px;
-}
-.event-title > .event-register > a
-{
-    padding: 10px;
-    font-size: 15px;
-    background: #437531;
-    color: white;
-
-}
-.event-wrapper > .cover-overlay > .event-time-detail
-{
-    text-align: right;
-    font-size: 30px;
-    flex: 1;
-}
-
-.description
-{
-    padding: 20px 30px;
-    display: flex;
-}
-.description > .main
-{
-    flex: 0.7;
-}
-.description .heading
-{
-    font-weight: 800;
-    font-size: 20px;
 }
