@@ -3390,7 +3390,7 @@ input[type="button"].btn-block {
   opacity: 1;
 }
 .collapse {
-  display: relative;
+  display: absolute;
 }
 .collapse.in {
   display: block;
