@@ -1164,6 +1164,12 @@ footer .footer_social ul li i {
     min-height: 900px;
     width:100%;
 }
+@media (max-width: 700px) {
+    .background-image-home
+    {
+        min-height: 500px;
+    }
+}
 .footer {
     bottom: 0px;
     height: auto;
@@ -1271,6 +1277,8 @@ footer .footer_social ul li i {
     width: 100%;
     z-index: -1;
     background: url('../img/1.jpeg');
+    background-size: cover;
+    background-position: center;
     transition: 0.5s ease-out;
 }
 
@@ -1385,4 +1393,17 @@ footer .footer_social ul li i {
 .navbar-default .dropdown > a.dropdown-toggle
 {
     color: white;
+}
+@media (max-width: 360px)
+{
+    .carousel-caption {
+      top: 10% ;
+    }
+}
+
+@media (max-width: 795px)
+{
+    .carousel-caption {
+      top: 10% ;
+    }
 }
