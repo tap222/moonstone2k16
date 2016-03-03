@@ -462,45 +462,10 @@
     </div>
     <footer>
         <!--top footer start-->
-        <div class="top_footer footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>Contact</h1>
-                        <p>
-                            <STRONG>Medi-Caps University Indore</STRONG>
-                        </p>
-                        <p>A.B. Road, Pigdamber, Rau </p>
-                        <p>Indore - 453331</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>Sponsors</h1>
-                        <!--<ul>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                        </ul>-->
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1 class="rgt_align">Stay Up to Date</h1>
-                        <div class="footer_social">
-                            <ul class="nav navbar-nav navbar-social">
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-pinterest-p fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--top footer end-->
+    <!--top footer end-->
 
         <!--lower footer start-->
-        <div class="lower_footer footer">
+        <div class="lower_footer footer navbar-fixed-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
