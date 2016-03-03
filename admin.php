@@ -29,7 +29,7 @@
 
                     <div style="padding-top:30px" class="panel-body" >
                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-                        <form id="loginform" class="form-horizontal" role="form">
+                        <form id="loginform" class="form-horizontal" role="form" method="post">
                                 <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
@@ -50,12 +50,29 @@
                                 <div style="margin-top:10px" class="form-group">
                                 <!-- Button -->
                                     <div class="col-md-12 ">
-                                    <a id="btn-login" href="#" class="btn btn-success">Login    </a>
+                                    <input type="submit" class="btn btn-success">
                                     </div>
                                 </div>
 
 
-                                                            </div>    
+                             </div>
+                        <?php
+                                if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                            {
+                                echo 'The is a problem with the server, please try again later.<br>';
+                            }
+                            else
+                            {
+
+                            }
+                            
+                        if(@isset($_POST['username'])&& @isset($_POST['password'])){
+                            $name = (string)$_POST['username'];
+                            $pass = (string)$_POST['password'];
+                            $query1 = "SELECT * from login"
+                        }
+
+                        ?>
                         </form>     
                     </div>                     
                 </div>  
