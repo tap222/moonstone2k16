@@ -10,7 +10,7 @@ function changeImage()
     console.log(IMAGES[CURR_IMAGE]);
     $('.background-image-home').css('background', "url('img/"+ IMAGES[CURR_IMAGE % 7] +"')");
     $('.background-image-home').css('background-position', 'center');
-    $('.background-image-home').css('background-size', 'contain');
+    $('.background-image-home').css('background-size', 'cover');
 
     CURR_IMAGE += 1;
 }

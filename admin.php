@@ -2,25 +2,161 @@
 <html>
     <head>
         <title>Admin Page</title>
-        <link rel="stylesheet" href="css/bootstrap.css"></link>
-    <link rel="stylesheet" href="css/bootstrap-theme.css"></link>
-    <link rel="stylesheet" href="css/sidebar.css"></link>
-    
-    <!--Importing the required javascripts -->
-    <script type="text/javascript" src="js/angular.js"></script>
-    <script type="text/javascript" src="js/angular-route.js"></script>
-    <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/userRouter.js"></script>
-    <script type="text/javascript" src="js/ui-bootstrap-tpls.min.js"></script>
-    <script type="text/javascript" src="js/ui-bootstrap-tpls-1.1.0.js"></script>
-    
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
+        <?php
+            ob_start();
+            session_start();
+            $_SESSION["user"]="home";
+
+        ?>
+        <div class="row">
+            <div class='col-xs-12'>
+                <div class="bs-example wrapper" data-example-id="default-navbar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" class="img-responsive"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <li class="mega-menu-column">
+                                    <ul>
+                                        <li class="nav-header">Highlights</li>
+                                        <li class="element"><a href="event.php?eventno=1">Celebrity Night</a></li>
+                                        <li class="element"><a href="event.php?eventno=2">Fashion Show</a></li>
+                                        <li class="element"><a href="event.php?eventno=3">Annual Function</a></li>
+                                        <li class="element"><a href="event.php?eventno=4">DJ Night</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="mega-menu-column">
+                                    <ul>
+                                        <li class="nav-header">Day 1 </li>
+                                        <li class="element"><a href="#">Filmy</a></li>
+                                        <li class="element"><a href="#">Symphony</a></li>
+                                        <li class="element"><a href="#">The Game of BOTS</a></li>
+                                        <li class="element"><a href="#">Gulley Cricket</a></li>
+                                        <li class="element"><a href="#">Grandeur(PG)</a></li>
+                                        <li class="element"><a href="#">Paint-a-Toon</a></li>
+                                        <li class="element"><a href="#">Snakes-and-Ladders</a></li>
+                                        <li class="element"><a href="#">Gaming Park</a></li>
+                                        <li class="element"><a href="#">Starbitzz Stumperz</a></li>
+                                        <li class="element"><a href="#">Quiz Hunters</a></li>
+                                        <li class="element"><a href="#">Eloquence</a></li>
+                                        <li class="element"><a href="#">Funtakshari</a></li>
+                                        <li class="element"><a href="#">Sport O Spark</a></li>
+                                        <li class="element"><a href="#">Masti ki Pathshala</a></li>
+                                        <li class="element"><a href="#">Me-Di Buggers</a></li>
+                                        <li class="element"><a href="#">Mini Soccer</a></li>
+                                        <li class="element"><a href="#">Zenith</a></li>
+                                        <li class="element"><a href="#">Roadies</a></li>
+                                        <li class="element"><a href="#">Photobooth</a></li>
+                                        <li class="element"><a href="#">Distraction</a></li>
+                                        <li class="element"><a href="#">Face and TShirt Painting</a></li>
+                                        <li class="element"><a href="#">Rangoli</a></li>
+                                        <li class="element"><a href="#">Gyan Prayag</a></li>
+                                        <li class="element"><a href="#">Sportsathlon</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="mega-menu-column">
+                                    <ul>
+                                        <li class="nav-header">Day 2</li>
+                                        <li class="element"><a href="#">Eloquence</a></li>
+                                        <li class="element"><a href="#">Funtakshari</a></li>
+                                        <li class="element"><a href="#">Filmy</a></li>
+                                        <li class="element"><a href="#">Symphony</a></li>
+                                        <li class="element"><a href="#">Game of BOTS</a></li>
+                                        <li class="element"><a href="#">Street Cricket</a></li>
+                                        <li class="element"><a href="#">Grandeur(PG)/Paint a Toon</a></li>
+                                        <li class="element"><a href="#">Treasure Hunt</a></li>
+                                        <li class="element"><a href="#">Starblitzz Stumperz</a></li>
+                                        <li class="element"><a href="#">Photobooth</a></li>
+                                        <li class="element"><a href="#">Quiz Hunterz</a></li>
+                                        <li class="element"><a href="#">Photobooth</a></li>
+                                        <li class="element"><a href="#">Comedy Gags</a></li>
+                                        <li class="element"><a href="#">Step-Up Race</a></li>
+                                        <li class="element"><a href="#">Me-Di Buggers</a></li>
+                                        <li class="element"><a href="#">Gyan Prayag</a></li>
+                                        <li class="element"><a href="#">Mini Soccer</a></li>
+                                        <li class="element"><a href="#">Stunt Mania</a></li>
+                                        <li class="element"><a href="#">Zenith</a></li>
+                                        <li class="element"><a href="#">Roadies</a></li>
+                                        <li class="element"><a href="#">Dance Competition</a></li>
+                                        <li class="element"><a href="#">Basket Ball</a></li>
+                                        <li class="element"><a href="#">Volley Ball</a></li>
+                                        <li class="element"><a href="#">Cricket</a></li>
+                                        <li class="element"><a href="#">Chess/Carrom</a></li>
+                                        <li class="element"><a href="#">Kho Kho</a></li>
+                                        <li class="element"><a href="#">Kabaddi</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-column">
+                                    <ul>
+                                    <li class="nav-header">Day 3</li>
+                                    <li class="element"><a href="#">Street Cricket </a></li>
+                                    <li class="element"><a href="#">Grandeur(PG)</a></li>
+                                    <li class="element"><a href="#">Freshers</a></li>
+                                    <li class="element"><a href="#">Funbola!</a></li>
+
+                                    <li class="element"><a href="#">Mini Soccer</a></li>
+                                    <li class="element"><a href="#">Create Best From Waste</a></li>
+                                    <li class="element"><a href="#">Filmy</a></li>
+                                    <li class="element"><a href="#">Basketball</a></li>
+                                    <li class="element"><a href="#">Volleyball</a></li>
+                                    <li class="element"><a href="#">Cricket</a></li>
+
+                                    <li class="element"><a href="#">Chess/Carrom</a></li>
+                                    <li class="element"><a href="#">Kho-Kho</a></li>
+                                    <li class="element"><a href="#">Kabaddi</a></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</b></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Category 3 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Sub Menu Link-1</a></li>
+                                <li><a href="#">Sub Menu Link-2</a></li>
+                                <li><a href="#">Sub Menu Link-3</a></li>
+                                <li><a href="#">Sub Menu Link-4</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Moonstone 2K16</a></li>
+                                <li><a href="#">Medicaps University</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+            </div>
         
+        </div>
          <div class="container">  
      <br><br>
-        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    <h3>Adminstrator's Page</h3>
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title"> Login</div>
@@ -29,10 +165,10 @@
 
                     <div style="padding-top:30px" class="panel-body" >
                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-                        <form id="loginform" class="form-horizontal" role="form" method="post">
+                        <form id="loginform" class="form-horizontal" role="form" method="post" action="admin.php">
                                 <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">                                        
                                 </div>
                                 
                                 <div style="margin-bottom: 25px" class="input-group">
@@ -41,9 +177,7 @@
                                 </div>
                                     
 
-                                <div class="checkbox">
-                                    <label><input id="login-remember" type="checkbox" name="remember" value="1"> Remember me</label>
-                                </div>
+                                
                            
 
 
@@ -66,11 +200,53 @@
 
                             }
                             
-                        if(@isset($_POST['username'])&& @isset($_POST['password'])){
-                            $name = (string)$_POST['username'];
-                            $pass = (string)$_POST['password'];
-                            $query1 = "SELECT * from login"
-                        }
+    				        if(isset($_POST['username']) && isset($_POST['password']))
+								{
+									if(!empty($_POST['username']) && !empty($_POST['password']))
+									{		
+												require 'testinput.inc.php';
+												$user =(string)test_input($_POST['username']);
+												$password = test_input($_POST['password']);
+												$mysqli = mysqli_connect('localhost', 'root', '', 'moonstone2k16');
+												$query = "SELECT * FROM login WHERE username = '$user'";
+												
+												//Execution	 of SQL
+												if( mysql_query($query)) 
+												{
+													$query_run= mysql_query($query);
+													$row= mysql_fetch_assoc($query_run);
+													if ($password == $row['password']) 
+													{
+														$usertype = $row['type'];
+														$mysqli->close();
+														$_SESSION["user"]=$user;
+												        header("Location: /moonstone2k16/data.php");
+															
+													}	else { echo "Incorrect password<br>"; }
+
+												}
+												else 
+										{
+											echo 'You are not a valid user. Please Signup First!!!!';
+										}
+												
+										if(($_POST['username']=='admin') && ($_POST['password']=='admin'))
+										{
+											$_SESSION["user"]=$user;
+											header("Location: /moonstone2k16/data.php");
+										}
+										else if(($_POST['username']=='student') && $_POST['password']=='student')
+										{
+											$_SESSION["user"]=$user;
+											header("Location: /moonstone2k16/data.php");
+										}
+										
+										echo 'You are not a valid user. Please Signup First!!!!.<br>';
+									}
+									else{
+										echo 'Please enter your login credentials';
+									}
+								}
 
                         ?>
                         </form>     
@@ -78,6 +254,9 @@
                 </div>  
             </div>
 </div>
-
+<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modern-business.js"></script>
+    <script src="js/script.js"></script>
     </body>
 </html>
