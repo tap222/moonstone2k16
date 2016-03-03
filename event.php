@@ -396,10 +396,31 @@
                 <div class="oraganization-comitee">
                     <div class="title">OC Members   </div>
                     <div class="contents">
-                        <div>John Doe</div>
-                        <div>Jane Doe</div>
-                        <div>John Doe</div>
-                        <div>Jane Doe</div>
+                        <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT * from org_commitee WHERE Event_id= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $OC_Name = $query_row['Name'];
+                                echo $OC_Name.'<br>';
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
                     </div>
                 </div>
                 <div class="contact">
