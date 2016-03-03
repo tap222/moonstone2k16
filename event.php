@@ -179,7 +179,7 @@
             </div>
         </nav>
     </div>
-    <div class="event-wrapper">
+    <div class="event-wrapper" >
         <div class="cover">
 
         </div>
@@ -355,13 +355,19 @@
                     }
                         
                     ?>
+                    <br/>
+                    <br/>
+                    <a style="margin-top:80px;" class='event-register' href="register.php">Register Now!</a>
+
                 </div>
-            </div>
-            <div class="aside">
+                <div>
+                                                    </div>
+            </div><br>
+
+            <div class="aside" style="color:black">
                 <div class="vertical-separator">
 
                 </div>
-                <a class='event-register' href="register.php">Register Now!</a>
                 <div class="coordinater">
                     <div class="title">Coordinator</div>
                     <div class="contents">

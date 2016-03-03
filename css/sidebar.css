@@ -1,0 +1,172 @@
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    
+}
+body,
+html { height: 100%; }
+
+
+/*-------------------------------*/
+/*           Wrappers            */
+/*-------------------------------*/
+
+.navbar{
+    margin-bottom: 0px;
+    
+}
+.wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.wrapper.toggled {
+    padding-left: 220px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    left: 220px;
+    width: 0;
+    height: 100%;
+    margin-left: -220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #1a1a1a;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+}
+
+#sidebar-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper.toggled #sidebar-wrapper {
+    width: 220px;
+    
+}
+
+#page-content-wrapper {
+    padding-top: 0px;
+    width:100%;
+     position: absolute;
+}
+#top-navbar{
+    width: 100%;
+    padding-left: 70px;
+}
+
+.wrapper.toggled #page-content-wrapper {
+   position: absolute;
+    margin-right: -220px;
+    width: 100%;
+}
+
+/*-------------------------------*/
+/*     Sidebar nav styles        */
+/*-------------------------------*/
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    position: relative; 
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+#logo
+{
+    padding: 20px;
+}
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color:#35acdf;
+    -webkit-transition: width .2s ease-in;
+      -moz-transition:  width .2s ease-in;
+       -ms-transition:  width .2s ease-in;
+            transition: width .2s ease-in;
+
+}
+.sidebar-nav li:first-child a {
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .2s ease-in;
+      -moz-transition:  width .2s ease-in;
+       -ms-transition:  width .2s ease-in;
+            transition: width .2s ease-in;
+
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 15px 10px 30px;    
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*-------------------------------*/
+/*       Hamburger-ARROW         */
+/*-------------------------------*/
+
+.hamburger {
+  font-family:'Glyphicons Halflings'; 
+  content: "\f015";
+  position: fixed;
+  top: 280px;  
+  z-index: 999;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  margin-left: 0px;
+  background: transparent;
+    border: none;
+ }
+.hamburger.is-closed .icon:before{
+    content:"\e250";
+    color:black;
+    font-size: 30px;
+    font-style: normal;
+} 
+.hamburger.is-open .icon:before{
+       content:"\e251";
+    color:black;  
+    font-size: 30px;
+    font-style: normal;
+} 
+
