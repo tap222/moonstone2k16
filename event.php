@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" contennt="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -16,10 +16,7 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <!--header table start-->
     <div class="bs-example wrapper" data-example-id="default-navbar">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -47,7 +44,7 @@
                                         <li class="element"><a href="event.php?eventno=1">Celebrity Night</a></li>
                                         <li class="element"><a href="event.php?eventno=2">Fashion Show</a></li>
                                         <li class="element"><a href="event.php?eventno=3">Annual Function</a></li>
-                                        <li class="element"><a href="#">DJ Night</a></li>
+                                        <li class="element"><a href="event.php?eventno=4">DJ Night</a></li>
                                     </ul>
                                 </li>
 
@@ -173,8 +170,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Moonstone Festival</a></li>
-                                <li><a href="#">Medicaps University Indore</a></li>
+                                <li><a href="#">Moonstone 2K16</a></li>
+                                <li><a href="#">Medicaps University</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -182,100 +179,286 @@
             </div>
         </nav>
     </div>
-    <!--header table end-->
+    <div class="event-wrapper">
+        <div class="cover">
 
-    <!--banner table start-->
-    <div data-ride="carousel" class="carousel slide" id="carousel-example-captions">
-        <ol class="carousel-indicators">
-            <li class="" data-slide-to="0" data-target="#carousel-example-captions"></li>
-            <li data-slide-to="1" data-target="#carousel-example-captions" class="active"></li>
-            <li data-slide-to="2" data-target="#carousel-example-captions" class=""></li>
-        </ol>
-        <div role="listbox" class="carousel-inner">
-            <div class="item active" id="home-background-image">
-                <!-- <img src="img/banner_img.jpg" alt="1634x662"> -->
-                <div class="background-image-home">
+        </div>
+        <div class="cover-overlay">
+            <div class="event-title">
+                <span><?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Name from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $name = $query_row['Name'];
+                                echo $name;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?></span>
+            </div>
+            <div class="event-time-detail">
+                <div class="date">
+                    Day <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Day from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Day = $query_row['Day'];
+                                echo $Day;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?> - <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Date from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Date = $query_row['Date'];
+                                echo $Date;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
+                <div class="time">
+                    <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Time from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Time = $query_row['Time'];
+                                echo $Time;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
+
+            </div>
+        </div>
+        <div class="description">
+            <div class="main">
+                <div class="heading">
+                    Venue
+                </div>
+                <div class="venue-content">
+                    <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Venue from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Venue = $query_row['Venue'];
+                                echo $Venue;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
+                <div class="heading">
+                    Description
+                </div>
+                <div class="description-content">
+                    <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Description from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Description = $query_row['Description'];
+                                echo $Description;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="vertical-separator">
 
                 </div>
-                <div class="carousel-caption">
-                    <h3 id="first-slide-label" style="font-size:3em;">Medicaps University Indore Presents<a href="#first-slide-label" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h3>
-                    <p>A blast of extravagance and a festival that will be etched into your memory for the time to come </p>
-                    <div><a href="register.php" class="btn_viewmore">Register Now!</a></div>
+                <a class='event-register' href="register.php">Register Now!</a>
+                <div class="coordinater">
+                    <div class="title">Coordinator</div>
+                    <div class="contents">
+                        <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT * from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $head = $query_row['Head Faculty'];
+                                echo $head;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                    </div>
+
+                </div>
+                <div class="oraganization-comitee">
+                    <div class="title">OC Members   </div>
+                    <div class="contents">
+                        <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT * from org_commitee WHERE Event_id= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $OC_Name = $query_row['Name'];
+                                echo $OC_Name.'<br>';
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="title">Contact</div>
+                    <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Contact from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Contact = $query_row['Contact'];
+                                echo $Contact;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
                 </div>
             </div>
         </div>
-        <a data-slide="prev" role="button" href="#carousel-example-captions" class="left carousel-control"> <span class="glyphicon glyphicon-chevron-left">&lsaquo;</span> </a>
-        <a data-slide="next" role="button" href="#carousel-example-captions" class="right carousel-control"> <span class="glyphicon glyphicon-chevron-right">&rsaquo;</span> </a>
     </div>
-    <!--banner table end-->
-
-    <!--footer table start-->
-    <footer>
-        <!--top footer start-->
-        <div class="top_footer footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>Contact</h1>
-                        <p>
-                            <STRONG>Medi-Caps University Indore</STRONG>
-                        </p>
-                        <p>A.B. Road, Pigdamber, Rau </p>
-                        <p>Indore - 453331</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>Sponsors</h1>
-                        <!--<ul>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                        </ul>-->
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1 class="rgt_align">Stay Up to Date</h1>
-                        <div class="footer_social">
-                            <ul class="nav navbar-nav navbar-social">
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-pinterest-p fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--top footer end-->
-
-        <!--lower footer start-->
-        <div class="lower_footer footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <p class="copyright_txt">Copyright &copy; Link</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <ul>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li>|</li>
-                            <li><a href="#">Event Disclaimer</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--lower footer end-->
-    </footer>
-    <!--footer table end-->
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
-    <script src="js/script.js"></script>
 </body>
-
 </html>

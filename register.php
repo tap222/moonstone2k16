@@ -52,9 +52,9 @@
                                 <li class="mega-menu-column">
                                     <ul>
                                         <li class="nav-header">Highlights</li>
-                                        <li class="element"><a href="#">Celebrity Night</a></li>
-                                        <li class="element"><a href="#">Fashion Show</a></li>
-                                        <li class="element"><a href="#">Annual Function</a></li>
+                                        <li class="element"><a href="event.php?eventno=1">Celebrity Night</a></li>
+                                        <li class="element"><a href="event.php?eventno=2">Fashion Show</a></li>
+                                        <li class="element"><a href="event.php?eventno=3">Annual Function</a></li>
                                         <li class="element"><a href="#">DJ Night</a></li>
                                     </ul>
                                 </li>

@@ -1,14 +1,14 @@
 CURR_IMAGE = 0;
-IMAGES = ['2.jpeg', '1.jpeg'];
+NUM_IMAGES = 7;
+IMAGES = ['2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg', '6.jpeg', '7.jpeg', '1.jpeg'];
 function slideShow()
 {
-    // setTimeout(changeImage(IMAGES[i]), 1000);
     setInterval(changeImage, 3000)
 }
 function changeImage()
 {
     console.log(IMAGES[CURR_IMAGE]);
-    $('.background-image-home').css('background', "url('img/"+ IMAGES[CURR_IMAGE % 2] +"')");
+    $('.background-image-home').css('background', "url('img/"+ IMAGES[CURR_IMAGE % 7] +"')");
     $('.background-image-home').css('background-position', 'center');
     CURR_IMAGE += 1;
 }

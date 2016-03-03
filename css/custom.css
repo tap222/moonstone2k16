@@ -355,7 +355,7 @@ nav .container {
 }
 
 .navbar-default {
-    background-color: #fff;
+    background-color: #FFF;
     border-width: 0;
 }
 
@@ -1309,13 +1309,14 @@ footer .footer_social ul li i {
 {
     font-size: 50px;
 }
-.event-title > .event-register > a
+.event-register
 {
-    padding: 10px;
+    padding: 10px 5px;
     font-size: 15px;
     background: #437531;
     color: white;
-
+    margin-bottom: 20px;
+    border: none;
 }
 .event-wrapper > .cover-overlay > .event-time-detail
 {
@@ -1326,15 +1327,56 @@ footer .footer_social ul li i {
 
 .description
 {
-    padding: 20px 30px;
+    padding: 0px 0px;
     display: flex;
 }
 .description > .main
 {
-    flex: 0.7;
+    flex: 0.9;
+    padding: 50px 50px;
 }
 .description .heading
 {
     font-weight: 800;
+    font-size: 25px;
+}
+.main > .venue-content
+{
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+.main > .description-content
+{
+    font-size: 17px;
+}
+.main > .venue-content, .description-content
+{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.aside
+{
+    flex: 0.1;
+    /*margin-left: 20%;*/
+    text-align: center;
+    /*background-color: #e64a19;*/
+    padding: 50px 50px;
+    color: #EEE;
+}
+.aside .title
+{
+    font-weight: 800;
     font-size: 20px;
+}
+.aside .contents
+{
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+.aside > .vertical-separator
+{
+
+    background: #333;
+    height: 100%;
+    width: 1px;
 }
