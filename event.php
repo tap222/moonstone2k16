@@ -10,24 +10,13 @@
     <title>Moonstone 2K16</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css"></link>
-    <link rel="stylesheet" href="css/bootstrap-theme.css"></link>
     <link href="css/custom.css" rel="stylesheet">
-
-
-    <!--Importing the required javascripts -->
-    <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <!--header table start-->
     <div class="bs-example wrapper" data-example-id="default-navbar">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -55,7 +44,7 @@
                                         <li class="element"><a href="event.php?eventno=1">Celebrity Night</a></li>
                                         <li class="element"><a href="event.php?eventno=2">Fashion Show</a></li>
                                         <li class="element"><a href="event.php?eventno=3">Annual Function</a></li>
-                                        <li class="element"><a href="#">DJ Night</a></li>
+                                        <li class="element"><a href="event.php?eventno=4">DJ Night</a></li>
                                     </ul>
                                 </li>
 
@@ -190,148 +179,265 @@
             </div>
         </nav>
     </div>
-    <!--header table end-->
-    <div class="register-form-wrapper">
-        <div class="register-form-wrapper-overlay">
+    <div class="event-wrapper">
+        <div class="cover">
+
         </div>
-        <div class="container">
-            <form action="register.php" method="post" accept-charset="utf-8" class="form-group">
-                <label>Name<span class='required'>*</span></label>
-                <input type="text" name="name_of_person" value="" placeholder="" class="">
-                <label>Gender<span class='required'>*</span></label>
-                <select type="text" name="gender" value="" placeholder="" class="">
-                    <option selected>Select</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
-                <label>Email<span class='required'>*</span></label>
-                <input type="email" name="email_of_person" value="" placeholder="" class="">
-                <label>Phone<span class='required'>*</span></label>
-                <input type="text" name="phone_of_person" value="" placeholder="" class="">
-                <label>College<span class='required'>*</span></label>
-                <input type="text" name="college_of_person" value="" placeholder="" class="">
-                <label>Branch</label>
-                <input type="text" name="branch_of_person" value="" placeholder="" class="">
-                <label>Year</label>
-                <input type="text" name="year_of_person" value="" placeholder="" class="">
-                <label>Event<span class='required'>*</span></label>
-                <select type="text" name="event_intrested" value="" placeholder="" class="">
-                    <option selected>Select</option>
-                    <option>Event 1</option>
-                    <option>Event 2</option>
-                    <option>Event 3</option>
-                    <option>Event 4</option>
-                </select>
-
-               <input type="submit" style="background: #356535; border:none" value="Submit">
-
-                 <?php
-
-
-                        if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+        <div class="cover-overlay">
+            <div class="event-title">
+                <span><?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                            echo 'Connection Successful!<br> ';
-                            }
-    
-                
-                    if(@isset($_POST['name_of_person'])&& @isset($_POST['gender']) && @isset($_POST['email_of_person']) && @isset($_POST['phone_of_person']) && @isset($_POST['college_of_person']) && @isset($_POST['branch_of_person']) && @isset($_POST['year_of_person']) && @isset($_POST['event_intrested']))
+                           
+                        }
+                    
+                    $eventno = $_GET['eventno'];
                     {
-                        $name = (string)$_POST['name_of_person'];
-                        $gender = (string)$_POST['gender'];
-                        $email = (string)$_POST['email_of_person'];
-                        $phone = (string)$_POST['phone_of_person'];
-                        $college = (string)$_POST['college_of_person'];
-                        $branch = (string)$_POST['branch_of_person'];
-                        $year = (string)$_POST['year_of_person'];
-                        $eventin = (string)$_POST['event_intrested'];
-                        if(!empty($name) && !empty($email) && !empty($phone)&& !empty($college)&& !empty($branch)&& !empty($year)&& !empty($eventin)){
-                            $query1 = "INSERT into registration VALUES ('', '$name' , '$email' , '$phone', '$college', '$branch' , '$year' , '$eventin', '$gender')";
-                            if(@mysql_query($query1)){
-                                echo 'Data Submitted';
-                            }
-                            else
+                        $query1 = "SELECT Name from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                echo 'Submission Failed';
+                                $name = $query_row['Name'];
+                                echo $name;
+                                
                             }
+                        }
+                    }
+                        
+                    ?></span>
+            </div>
+            <div class="event-time-detail">
+                <div class="date">
+                    Day <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                            echo 'Fill form';
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Day from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Day = $query_row['Day'];
+                                echo $Day;
+                                
+                            }
                         }
                     }
+                        
+                    ?> - <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Date from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Date = $query_row['Date'];
+                                echo $Date;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
+                <div class="time">
+                    <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Time from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Time = $query_row['Time'];
+                                echo $Time;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
 
-                ?>
-            </form>
+            </div>
+        </div>
+        <div class="description">
+            <div class="main">
+                <div class="heading">
+                    Venue
+                </div>
+                <div class="venue-content">
+                    <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Venue from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Venue = $query_row['Venue'];
+                                echo $Venue;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
+                <div class="heading">
+                    Description
+                </div>
+                <div class="description-content">
+                    <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Description from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Description = $query_row['Description'];
+                                echo $Description;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="vertical-separator">
+
+                </div>
+                <a class='event-register' href="register.php">Register Now!</a>
+                <div class="coordinater">
+                    <div class="title">Coordinator</div>
+                    <div class="contents">
+                        <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT * from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $head = $query_row['Head Faculty'];
+                                echo $head;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                    </div>
+
+                </div>
+                <div class="oraganization-comitee">
+                    <div class="title">OC Members   </div>
+                    <div class="contents">
+                        <div>John Doe</div>
+                        <div>Jane Doe</div>
+                        <div>John Doe</div>
+                        <div>Jane Doe</div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="title">Contact</div>
+                    <?php
+                    
+                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        {
+                            echo 'The is a problem with the server, please try again later.<br>';
+                        }
+                        else
+                        {
+                           
+                        }
+                    $eventno = $_GET['eventno'];
+                    {
+                        $query1 = "SELECT Contact from Event WHERE Sno= '$eventno' ";
+                        if($query_run = mysql_query($query1))
+                        {
+                            while($query_row = mysql_fetch_assoc($query_run))
+                            {
+                                $Contact = $query_row['Contact'];
+                                echo $Contact;
+                                
+                            }
+                        }
+                    }
+                        
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <!--top footer start-->
-        <div class="top_footer footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>Contact</h1>
-                        <p>
-                            <STRONG>Medi-Caps University</STRONG>
-                        </p>
-                        <p>A.B. Road, Pigdamber, Rau </p>
-                        <p>Indore - 453331</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>News</h1>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1 class="rgt_align">Stay Up to Date</h1>
-                        <div class="footer_social">
-                            <ul class="nav navbar-nav navbar-social">
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-pinterest-p fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--top footer end-->
-
-        <!--lower footer start-->
-        <div class="lower_footer footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <p class="copyright_txt">Copyright &copy; Link</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <ul>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li>|</li>
-                            <li><a href="#">Event Disclaimer</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--lower footer end-->
-    </footer>
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
