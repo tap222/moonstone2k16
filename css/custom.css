@@ -60,7 +60,7 @@ body {
 
 /* Half Page Height Carousel Customization */
 
-.carousel {
+.{
     height: auto;
     /*50% - auto*/
 }
@@ -1379,4 +1379,14 @@ footer .footer_social ul li i {
     background: #333;
     height: 100%;
     width: 1px;
+}
+
+.btn_viewmore2 {
+    background-color:dodgerblue !important;
+    color: white;
+}
+
+.desc {
+      
+
 }
