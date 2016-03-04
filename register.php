@@ -170,19 +170,21 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Category 3 <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Sub Menu Link-1</a></li>
-                                <li><a href="#">Sub Menu Link-2</a></li>
-                                <li><a href="#">Sub Menu Link-3</a></li>
-                                <li><a href="#">Sub Menu Link-4</a></li>
+                                <li><a href="#">Steering Commitee</a></li>
+                                <li><a href="#">Sports Commitee</a></li>
+                                <li><a href="#">Cultural Commitee</a></li>
+                                <li><a href="#">Competition Commitee</a></li>
+                                <li><a href="#">Discipline Commitee</a></li>
+                                <li><a href="#">Media Commitee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Moonstone 2K16</a></li>
-                                <li><a href="#">Medicaps University</a></li>
+                                <li><a href="#">Moonstone Festival</a></li>
+                                <li><a href="#">Medicaps University Indore</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -271,41 +273,6 @@
 
     <footer>
         <!--top footer start-->
-        <div class="top_footer footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>Contact</h1>
-                        <p>
-                            <STRONG>Medi-Caps University</STRONG>
-                        </p>
-                        <p>A.B. Road, Pigdamber, Rau </p>
-                        <p>Indore - 453331</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>News</h1>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1 class="rgt_align">Stay Up to Date</h1>
-                        <div class="footer_social">
-                            <ul class="nav navbar-nav navbar-social">
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-pinterest-p fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!--top footer end-->
 
         <!--lower footer start-->
@@ -317,7 +284,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <ul>
-                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="admin.php">Admin's Login</a></li>
                             <li>|</li>
                             <li><a href="#">Event Disclaimer</a></li>
                         </ul>

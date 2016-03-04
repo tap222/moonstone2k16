@@ -142,12 +142,14 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Category 3 <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Sub Menu Link-1</a></li>
-                                <li><a href="#">Sub Menu Link-2</a></li>
-                                <li><a href="#">Sub Menu Link-3</a></li>
-                                <li><a href="#">Sub Menu Link-4</a></li>
+                                <li><a href="#">Steering Commitee</a></li>
+                                <li><a href="#">Sports Commitee</a></li>
+                                <li><a href="#">Cultural Commitee</a></li>
+                                <li><a href="#">Competition Commitee</a></li>
+                                <li><a href="#">Discipline Commitee</a></li>
+                                <li><a href="#">Media Commitee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -173,6 +175,7 @@
                 <form class="form-group" method="get" action="data.php">
                     <div class="col-xs-6 col-xs-offset-3">
                         <select class ="form-control" name="eventname">
+                            <option>All Events</option>
                             <option>Event 1</option>
                             <option>Event 2</option>
                             <option>Event 3</option>
@@ -192,7 +195,7 @@
 									if(!empty($_GET['eventname']))
 									{
                                         $event = $_GET['eventname'];
-                                        echo $event;
+                                        echo '<strong>'.$event.'</strong>';
                                     }
                                 }
 
@@ -222,8 +225,30 @@
 
                                     }
                                     if(isset($_GET['eventname'])){
-                                    $query = "SELECT * FROM registration WHERE event_name = '$event'";
-                                    if($query_run = mysql_query($query))
+                                    if($_GET['eventname'] == 'All Events'){
+                                        $query = "SELECT * FROM registration";
+                                        if($query_run = mysql_query($query))
+                                            {
+                                                while($query_row = mysql_fetch_assoc($query_run))
+                                                {    
+                                                    $sn = $query_row['Sno.'];
+                                                    $name = $query_row['Name'];
+                                                    $gender = $query_row['gender'];
+                                                    $email = $query_row['email'];
+                                                    $phone = $query_row['phone_no.'];
+                                                    $clg = $query_row['college_name'];
+                                                    $branch = $query_row['branch'];
+                                                    $year = $query_row['year'];
+                                                    echo '<tr><td>'.$sn.'</td><td>'.$name.'</td><td>'.$gender.'</td><td>'.$email.'</td><td>'.$phone.'</td><td>'.$clg.'</td><td>'.$branch.'</td><td>'.$year.'</td></tr>';
+
+
+                                    }
+                                        }
+                                    }
+                                        
+                                        else{
+                                        $query = "SELECT * FROM registration WHERE event_name = '$event'";
+                                        if($query_run = mysql_query($query))
                                             {
                                                 while($query_row = mysql_fetch_assoc($query_run))
                                                 {    
@@ -238,6 +263,7 @@
                                                     echo '<tr><td>'.$sn.'</td><td>'.$name.'</td><td>'.$gender.'</td><td>'.$email.'</td><td>'.$phone.'</td><td>'.$clg.'</td><td>'.$branch.'</td><td>'.$year.'</td></tr>';
 
                                                 }
+                                            }
                                             }
                                         }
                                 ?>
