@@ -131,12 +131,14 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Category 3 <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Sub Menu Link-1</a></li>
-                                <li><a href="#">Sub Menu Link-2</a></li>
-                                <li><a href="#">Sub Menu Link-3</a></li>
-                                <li><a href="#">Sub Menu Link-4</a></li>
+                                <li><a href="#">Steering Commitee</a></li>
+                                <li><a href="#">Sports Commitee</a></li>
+                                <li><a href="#">Cultural Commitee</a></li>
+                                <li><a href="#">Competition Commitee</a></li>
+                                <li><a href="#">Discipline Commitee</a></li>
+                                <li><a href="#">Media Commitee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -235,11 +237,12 @@
 											$_SESSION["user"]=$user;
 											header("Location: /moonstone2k16/data.php");
 										}
-										else if(($_POST['username']=='student') && $_POST['password']=='student')
+										else if(($_POST['username']=='Ashish') && $_POST['password']=='q7w8e9a4')
 										{
 											$_SESSION["user"]=$user;
 											header("Location: /moonstone2k16/data.php");
 										}
+                                        
 										
 										echo 'You are not a valid user. Please Signup First!!!!.<br>';
 									}
