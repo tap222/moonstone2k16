@@ -761,7 +761,7 @@ footer .footer_social ul li i {
         bottom: 65%;
     }
     .mega-menu {
-        left: -300px !important;
+        left: -20px !important;
         width: 980px;
     }
     .mega-menu li.mega-menu-column {
@@ -1519,6 +1519,12 @@ footer .footer_social ul li i {
     background: #6574A9;
 }
 
+
+
+.header {
+    padding-right:15% !important;
+    font-size: 1.5em;
+}
 .about-wrapper
 {
     position: relative;
@@ -1562,4 +1568,5 @@ footer .footer_social ul li i {
     height: 1px;
     background-color: #AAA;
     margin-bottom: 10px;
+
 }
