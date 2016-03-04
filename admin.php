@@ -133,13 +133,13 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Steering Commitee</a></li>
-                                <li><a href="#">Sports Commitee</a></li>
-                                <li><a href="#">Cultural Commitee</a></li>
-                                <li><a href="#">Competition Commitee</a></li>
-                                <li><a href="#">Discipline Commitee</a></li>
-                                <li><a href="#">Media Commitee</a></li>
-                            </ul>
+                                <li><a href="commitee1.php">Steering Commitee</a></li>
+                                <li><a href="commitee2.php">Sports Commitee</a></li>
+                                <li><a href="commitee3.php">Cultural Commitee</a></li>
+                                <li><a href="commitee4.php">Competition Commitee</a></li>
+                                <li><a href="commitee5.php">Discipline Commitee</a></li>
+                                <li><a href="commitee6.php">Media Commitee</a></li>
+                                   </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
