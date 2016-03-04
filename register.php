@@ -28,8 +28,13 @@
 </head>
 <body>
     <!--header table start-->
+    
+    <div class="nav-top">
+        <a href="index.html" class="new-logo medi"></a>
+        <a href="#" class="new-logo"></a>
+    </div>
     <div class="bs-example wrapper" data-example-id="default-navbar">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default header">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -167,7 +172,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</b></a>
+                            <a href="gallery.html" class="dropdown-toggle">Gallery</b></a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
@@ -184,8 +189,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Moonstone 2K16</a></li>
-                                <li><a href="#">Medicaps University</a></li>
+                                <li><a href="#">Moonstone Festival</a></li>
+                                <li><a href="#">Medicaps University Indore</a></li>
                             </ul>
                         </li>
                     </ul>

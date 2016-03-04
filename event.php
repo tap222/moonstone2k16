@@ -17,22 +17,30 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+    
+    <div class="nav-top">
+        <a href="index.html" class="new-logo medi"></a>
+        <a href="#" class="new-logo"></a>
+    </div>
     <div class="bs-example wrapper" data-example-id="default-navbar">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default header">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" class="img-responsive"></a>
+                    <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" class="img-responsive"></a> -->
+                    <div class="nabar-brand"></div>
+                    <!-- <span>MOONSTONE 2K16</span> -->
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <form class="navbar-form navbar-right" role="search">
+                   <!--  <form class="navbar-form navbar-right" role="search">
                         <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
 
                         <div class="form-group">
                             <input class="form-control" placeholder="Search Events" type="text">
                         </div>
-                    </form>
+                    </form> -->
 
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -44,7 +52,7 @@
                                         <li class="element"><a href="event.php?eventno=1">Celebrity Night</a></li>
                                         <li class="element"><a href="event.php?eventno=2">Fashion Show</a></li>
                                         <li class="element"><a href="event.php?eventno=3">Annual Function</a></li>
-                                        <li class="element"><a href="event.php?eventno=4">DJ Night</a></li>
+                                        <li class="element"><a href="#">DJ Night</a></li>
                                     </ul>
                                 </li>
 
@@ -156,7 +164,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</b></a>
+                            <a href="gallery.html" class="dropdown-toggle">Gallery</b></a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
@@ -172,8 +180,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Moonstone 2K16</a></li>
-                                <li><a href="#">Medicaps University</a></li>
+                                <li><a href="#">Moonstone Festival</a></li>
+                                <li><a href="#">Medicaps University Indore</a></li>
                             </ul>
                         </li>
                     </ul>
