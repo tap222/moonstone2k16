@@ -159,12 +159,14 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Category 3 <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Sub Menu Link-1</a></li>
-                                <li><a href="#">Sub Menu Link-2</a></li>
-                                <li><a href="#">Sub Menu Link-3</a></li>
-                                <li><a href="#">Sub Menu Link-4</a></li>
+                                <li><a href="#">Steering Commitee</a></li>
+                                <li><a href="#">Sports Commitee</a></li>
+                                <li><a href="#">Cultural Commitee</a></li>
+                                <li><a href="#">Competition Commitee</a></li>
+                                <li><a href="#">Discipline Commitee</a></li>
+                                <li><a href="#">Media Commitee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -179,23 +181,23 @@
             </div>
         </nav>
     </div>
-    <div class="event-wrapper">
+    <div class="event-wrapper" >
         <div class="cover">
 
         </div>
         <div class="cover-overlay">
             <div class="event-title">
                 <span><?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
-                    
+
                     $eventno = $_GET['eventno'];
                     {
                         $query1 = "SELECT Name from Event WHERE Sno= '$eventno' ";
@@ -205,24 +207,24 @@
                             {
                                 $name = $query_row['Name'];
                                 echo $name;
-                                
+
                             }
                         }
                     }
-                        
+
                     ?></span>
             </div>
             <div class="event-time-detail">
                 <div class="date">
                     Day <?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
                     $eventno = $_GET['eventno'];
                     {
@@ -233,20 +235,20 @@
                             {
                                 $Day = $query_row['Day'];
                                 echo $Day;
-                                
+
                             }
                         }
                     }
-                        
+
                     ?> - <?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
                     $eventno = $_GET['eventno'];
                     {
@@ -257,23 +259,23 @@
                             {
                                 $Date = $query_row['Date'];
                                 echo $Date;
-                                
+
                             }
                         }
                     }
-                        
+
                     ?>
                 </div>
                 <div class="time">
                     <?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
                     $eventno = $_GET['eventno'];
                     {
@@ -284,11 +286,11 @@
                             {
                                 $Time = $query_row['Time'];
                                 echo $Time;
-                                
+
                             }
                         }
                     }
-                        
+
                     ?>
                 </div>
 
@@ -301,14 +303,14 @@
                 </div>
                 <div class="venue-content">
                     <?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
                     $eventno = $_GET['eventno'];
                     {
@@ -319,11 +321,11 @@
                             {
                                 $Venue = $query_row['Venue'];
                                 echo $Venue;
-                                
+
                             }
                         }
                     }
-                        
+
                     ?>
                 </div>
                 <div class="heading">
@@ -331,14 +333,14 @@
                 </div>
                 <div class="description-content">
                     <?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
                     $eventno = $_GET['eventno'];
                     {
@@ -349,31 +351,37 @@
                             {
                                 $Description = $query_row['Description'];
                                 echo $Description;
-                                
+
                             }
                         }
                     }
-                        
+
                     ?>
+                    <br/>
+                    <br/>
+                    <a style="margin-top:80px;" class='event-register' href="register.php">Register Now!</a>
+
                 </div>
-            </div>
-            <div class="aside">
+                <div>
+                                                    </div>
+            </div><br>
+
+            <div class="aside" style="color:black">
                 <div class="vertical-separator">
 
                 </div>
-                <a class='event-register' href="register.php">Register Now!</a>
                 <div class="coordinater">
                     <div class="title">Coordinator</div>
                     <div class="contents">
                         <?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
                     $eventno = $_GET['eventno'];
                     {
@@ -384,11 +392,11 @@
                             {
                                 $head = $query_row['Head Faculty'];
                                 echo $head;
-                                
+
                             }
                         }
                     }
-                        
+
                     ?>
                     </div>
 
@@ -397,14 +405,14 @@
                     <div class="title">OC Members   </div>
                     <div class="contents">
                         <?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
                     $eventno = $_GET['eventno'];
                     {
@@ -415,25 +423,25 @@
                             {
                                 $OC_Name = $query_row['Name'];
                                 echo $OC_Name.'<br>';
-                                
+
                             }
                         }
                     }
-                        
+
                     ?>
                     </div>
                 </div>
                 <div class="contact">
                     <div class="title">Contact</div>
                     <?php
-                    
+
                     if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-                           
+
                         }
                     $eventno = $_GET['eventno'];
                     {
@@ -444,17 +452,39 @@
                             {
                                 $Contact = $query_row['Contact'];
                                 echo $Contact;
-                                
+
                             }
                         }
                     }
-                        
+
                     ?>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <!--top footer start-->
+    <!--top footer end-->
 
+        <!--lower footer start-->
+        <div class="lower_footer footer navbar-fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <p class="copyright_txt">Copyright &copy; Link</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <ul>
+                            <li><a href="admin.php">Admin's Login</a></li>
+                            <li>|</li>
+                            <li><a href="#">Event Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--lower footer end-->
+    </footer>
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>

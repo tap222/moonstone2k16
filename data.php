@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Moonstone 2K16</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Database</title>
+     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <!--header table start-->
+    <?php
+					session_start();
+					if($_SESSION["user"]=="home"){
+						header("Location: /moonstone2k16/admin.php");
+					}
+    ?>
     <div class="bs-example wrapper" data-example-id="default-navbar">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -29,12 +23,20 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <form class="navbar-form navbar-right" role="search">
-                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                    <form class="navbar-form navbar-right" role="search" action="admin.php" method="post">
+                        <select name="logout" style="display:none">
+                            <option selected>Logout</option>
+                        </select>
+                        <button style="background: crimson; border-color:crimson; height:40px; border-radius:5px;" type="submit"><strong>Logout</strong></button>
+                        <?php
+                            if(isset($_POST['logout']))
+                            {
+                                session_start();
+                                unset($_SESSION['user']);
+                            }
+                            
+                        ?>
 
-                        <div class="form-group">
-                            <input class="form-control" placeholder="Search Events" type="text">
-                        </div>
                     </form>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -133,33 +135,11 @@
                                     <li class="element"><a href="#">Kabaddi</a></li>
                                     </ul>
                                 </li>
-                                <li class="mega-menu-column">
-                                    <ul>
-                                        <li class="nav-header">Day 4</li>
-                                        <li class="element"><a href="#">Symphony </a></li>
-                                         <li class="element"><a href="#">The Game Of Bots</a></li>
-                                         <li class="element"><a href="#">Grandeur(PG)</a></li>
-                                         <li class="element"><a href="#">Mimicry</a></li>
-
-                                         <li class="element"><a href="#">Salad On Diet</a></li>
-                                         <li class="element"><a href="#">Sport-O-Spark</a></li>
-                                         <li class="element"><a href="#">Mini Soccer</a></li>
-                                         <li class="element"><a href="#">Dance Competition</a></li>
-                                         <li class="element"><a href="#">Photobooth</a></li>
-                                         <li class="element"><a href="#">Gyan Prayag</a></li>
-
-                                         <li class="element"><a href="#">Me-Di Buggers</a></li>
-                                         <li class="element"><a href="#">Cricket</a></li>
-                                         <li class="element"><a href="#">Chess & Carrom </a></li>
-                                         <li class="element"><a href="#">Cross Country</a></li>
-                                         <li class="element"><a href="#">Kho-Kho</a></li>
-                                         <li class="element"><a href="#">Kabaddi</a></li>
-                                    </ul>
-                                </li>
+                                
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="gallery.html" class="dropdown-toggle">Gallery</b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</b></a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
@@ -175,8 +155,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Moonstone Festival</a></li>
-                                <li><a href="#">Medicaps University Indore</a></li>
+                                <li><a href="#">Moonstone 2K16</a></li>
+                                <li><a href="#">Medicaps University</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -184,98 +164,119 @@
             </div>
         </nav>
     </div>
-    <!--header table end-->
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <div class="row">
+                <h1>Registration Database</h1>
+                <div class="col-xs-12">
+                                    </div>
+                <br><br>
+                
+                <form class="form-group" method="get" action="data.php">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <select class ="form-control" name="eventname">
+                            <option>All Events</option>
+                            <option>Event 1</option>
+                            <option>Event 2</option>
+                            <option>Event 3</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1"><input type="submit" value="Search" class="btn btn-success"></div>
+                </form>
+                
+                
+                
+            </div><br>
+            <div class='row'>
+                <div class="panel panel-default">
+                      <div class="panel-heading"><h4><?php
+                            if(isset($_GET['eventname']))
+								{
+									if(!empty($_GET['eventname']))
+									{
+                                        $event = $_GET['eventname'];
+                                        echo '<strong>'.$event.'</strong>';
+                                    }
+                                }
 
-    <!--banner table start-->
-    <div data-ride="carousel" class="carousel slide" id="carousel-example-captions">
-        <ol class="carousel-indicators">
-            <li class="" data-slide-to="0" data-target="#carousel-example-captions"></li>
-            <li data-slide-to="1" data-target="#carousel-example-captions" class="active"></li>
-            <li data-slide-to="2" data-target="#carousel-example-captions" class=""></li>
-        </ol>
-        <div role="listbox" class="carousel-inner">
-            <div class="item active" id="home-background-image">
-                <!-- <img src="img/banner_img.jpg" alt="1634x662"> -->
-                <div class="background-image-home">
+								
+                          
+                          ?></h4></div>
+                      <div class="panel-body">
+                        <table class="table table-striped">
+                            <tr style="font-weight: bold;">
+                                <td>S. No.</td>
+                                <td>Name</td>
+                                <td>Gender</td>
+                                <td>Email Id.</td>
+                                <td>Phone No.</td>
+                                <td>College Name</td>
+                                <td>Branch</td>
+                                <td>Year</td>
+                            </tr>
+                            
+                                <?php
+                                if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                                    {
+                                        echo 'The is a problem with the server, please try again later.<br>';
+                                    }
+                                    else
+                                    {
 
-                </div>
-                <div class="carousel-caption">
-                    <h3 id="first-slide-label" style="font-size:3em;">Medicaps University Indore Presents<a href="#first-slide-label" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h3>
-                    <p>A blast of extravagance and a festival that will be etched into your memory for the time to come </p>
-                    <div><a href="register.php" class="btn_viewmore">Register Now!</a></div>
+                                    }
+                                    if(isset($_GET['eventname'])){
+                                    if($_GET['eventname'] == 'All Events'){
+                                        $query = "SELECT * FROM registration";
+                                        if($query_run = mysql_query($query))
+                                            {
+                                                while($query_row = mysql_fetch_assoc($query_run))
+                                                {    
+                                                    $sn = $query_row['Sno.'];
+                                                    $name = $query_row['Name'];
+                                                    $gender = $query_row['gender'];
+                                                    $email = $query_row['email'];
+                                                    $phone = $query_row['phone_no.'];
+                                                    $clg = $query_row['college_name'];
+                                                    $branch = $query_row['branch'];
+                                                    $year = $query_row['year'];
+                                                    echo '<tr><td>'.$sn.'</td><td>'.$name.'</td><td>'.$gender.'</td><td>'.$email.'</td><td>'.$phone.'</td><td>'.$clg.'</td><td>'.$branch.'</td><td>'.$year.'</td></tr>';
+
+
+                                    }
+                                        }
+                                    }
+                                        
+                                        else{
+                                        $query = "SELECT * FROM registration WHERE event_name = '$event'";
+                                        if($query_run = mysql_query($query))
+                                            {
+                                                while($query_row = mysql_fetch_assoc($query_run))
+                                                {    
+                                                    $sn = $query_row['Sno.'];
+                                                    $name = $query_row['Name'];
+                                                    $gender = $query_row['gender'];
+                                                    $email = $query_row['email'];
+                                                    $phone = $query_row['phone_no.'];
+                                                    $clg = $query_row['college_name'];
+                                                    $branch = $query_row['branch'];
+                                                    $year = $query_row['year'];
+                                                    echo '<tr><td>'.$sn.'</td><td>'.$name.'</td><td>'.$gender.'</td><td>'.$email.'</td><td>'.$phone.'</td><td>'.$clg.'</td><td>'.$branch.'</td><td>'.$year.'</td></tr>';
+
+                                                }
+                                            }
+                                            }
+                                        }
+                                ?>
+                            
+                        </table>
+                      </div>
                 </div>
             </div>
         </div>
-        <a data-slide="prev" role="button" href="#carousel-example-captions" class="left carousel-control"> <span class="glyphicon glyphicon-chevron-left">&lsaquo;</span> </a>
-        <a data-slide="next" role="button" href="#carousel-example-captions" class="right carousel-control"> <span class="glyphicon glyphicon-chevron-right">&rsaquo;</span> </a>
-    </div>
-    <!--banner table end-->
-
-    <!--footer table start-->
-    <footer>
-        <!--top footer start-->
-        <div class="top_footer footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>Contact</h1>
-                        <p>
-                            <STRONG>Medi-Caps University Indore</STRONG>
-                        </p>
-                        <p>A.B. Road, Pigdamber, Rau </p>
-                        <p>Indore - 453331</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1>Sponsors</h1>
-                        <!--<ul>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> News Detail 1</a></li>
-                        </ul>-->
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <h1 class="rgt_align">Stay Up to Date</h1>
-                        <div class="footer_social">
-                            <ul class="nav navbar-nav navbar-social">
-                                <li><a class="push" target="_blank" href="facebook.com/moonstone2k16"><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a class="push" target="_blank" href="https://www.instagram.com/moonstone2k16/"><i class="fa fa-instagram fa-2x"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--top footer end-->
-
-        <!--lower footer start-->
-        <div class="lower_footer footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <p class="copyright_txt">Copyright &copy; Link</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <ul>
-                            <li><a href="admin.php">Admin's Login</a></li>
-                            <li>|</li>
-                            <li><a href="#">Event Disclaimer</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--lower footer end-->
-    </footer>
-    <!--footer table end-->
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
+    </div>  
+<script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
     <script src="js/script.js"></script>
-</body>
-
-</html>
+</body>       
+       

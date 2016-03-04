@@ -355,7 +355,7 @@ nav .container {
 }
 
 .navbar-default {
-    background-color: #FFF;
+    background-color: #6574A9;
     border-width: 0;
 }
 
@@ -1164,6 +1164,12 @@ footer .footer_social ul li i {
     min-height: 900px;
     width:100%;
 }
+@media (max-width: 700px) {
+    .background-image-home
+    {
+        min-height: 500px;
+    }
+}
 .footer {
     bottom: 0px;
     height: auto;
@@ -1237,7 +1243,7 @@ footer .footer_social ul li i {
 }
 .navbar
 {
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.9);
     margin: 0;
 }
 .nav-temp-class form[role='search'] input
@@ -1271,6 +1277,8 @@ footer .footer_social ul li i {
     width: 100%;
     z-index: -1;
     background: url('../img/1.jpeg');
+    background-size: cover;
+    background-position: center;
     transition: 0.5s ease-out;
 }
 
@@ -1281,11 +1289,11 @@ footer .footer_social ul li i {
 .event-wrapper >.cover
 {
     width: 100%;
-    height: 250px;
+    height: 350px;
     background: url("https://unsplash.it/1400/1000?random");
     background-position: bottom;
     background-size: cover;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -1309,15 +1317,6 @@ footer .footer_social ul li i {
 {
     font-size: 50px;
 }
-.event-register
-{
-    padding: 10px 5px;
-    font-size: 15px;
-    background: #437531;
-    color: white;
-    margin-bottom: 20px;
-    border: none;
-}
 .event-wrapper > .cover-overlay > .event-time-detail
 {
     text-align: right;
@@ -1329,11 +1328,15 @@ footer .footer_social ul li i {
 {
     padding: 0px 0px;
     display: flex;
+    background: rgba(0, 0, 0, 0.4);
 }
 .description > .main
 {
     flex: 0.9;
     padding: 50px 50px;
+    box-shadow: 2px -3px 6px rgba(0,0,0,0.9);
+    background: #FFF;
+    z-index: 20;
 }
 .description .heading
 {
@@ -1356,11 +1359,12 @@ footer .footer_social ul li i {
 }
 .aside
 {
-    flex: 0.1;
+    flex: 0.15;
     /*margin-left: 20%;*/
-    text-align: center;
-    /*background-color: #e64a19;*/
+    text-align: right;
+    background-color: #6574A9;
     padding: 50px 50px;
+    margin-top: 8px;
     color: #EEE;
 }
 .aside .title
@@ -1386,7 +1390,98 @@ footer .footer_social ul li i {
     color: white;
 }
 
-.desc {
       
 
+.aside > .event-register
+{
+    font-size: 20px;
+    padding: 10px 8px;
+    background: #437531;
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+}
+.navbar-default .dropdown > a.dropdown-toggle
+{
+    color: white;
+}
+@media (max-width: 360px)
+{
+    .carousel-caption {
+      top: 10% ;
+    }
+}
+
+@media (max-width: 795px)
+{
+    .carousel-caption {
+      top: 10% ;
+    }
+}
+
+.gallery-wrapper
+{
+    overflow: hidden;
+    position: relative;
+}
+.gallery-element
+{
+    height: 200px;
+    /*background: url('https://unsplash.it/400/300?random');*/
+    /*border: 1px solid green;*/
+    position: relative;
+    padding: 0;
+}
+.gallery-element-overlay
+{
+    height: 200px;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+    width: 100%;
+    bottom: -200px;
+    left: 0;
+    transition: 0.3s;
+    color: white;
+    padding: 30px 10px;
+    text-align: right;
+    cursor: pointer;
+}
+.show-overlay
+{
+    bottom: 0;
+}
+.gallery-element-overlay > .title
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.popup-display-backdrop
+{
+    overflow: hidden;
+    position: fixed;
+    display: none;
+}
+.popup-display-wrapper
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: rgba(0,0,0,0.7);
+}
+.popup-display
+{
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    border: 5px solid white;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px)
+{
+    .gallery-element {
+      top: 10% ;
+    }
 }
