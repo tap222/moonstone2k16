@@ -187,7 +187,7 @@
         </div>
 
 
-    <div class="row">
+    <div class="row" style="padding-bottom: 200px;">
         <div class="col-xs-12">
             <h1 class="text-center">Sports Commitee</h1>
             <h3 class="text-center">Faculty Co-ordinator : Dr. Yogesh pandya</h3>
@@ -208,16 +208,16 @@
                 <tr>	<td></td><td></td><td>Dr.P Harikrishna</td>	<td>7415362549</td></tr>
 <tr><td>5</td><td>Cross Country(5000M)</td>	<td>Prof.Mohammed Ali</td>	<td>9826074929</td></tr>
                 <tr>	<td></td><td></td><td>Prof.Sanjay Jathar</td>	<td>9827047206</td></tr>
-<tr><td>5</td><td>Carrom</td>	<td>Prof.Sachin Puntambekar</td>	<td>9406623359</td></tr>
+<tr><td>6</td><td>Carrom</td>	<td>Prof.Sachin Puntambekar</td>	<td>9406623359</td></tr>
                 <tr>	<td></td><td></td><td>Prof.Amit Kulkarni</td>	<td>9827554471</td></tr>
-Kabbadi	Prof.Malyaj Das	9630207958
-	Prof Ashish Bhargav	9425437733
-Kho-Kho	Prof.Dheerj Tiwari	9826093097
-	Prof.Anshuman Purohit	9926021070
-Athlitics(100,200&400m)	Prof.Jayesh Barve	9425072348
-	Dr.Shakil Qureshi	9827529975
-Table Tennis	Prof.Sandesh Jain	9713814789
-	Prof.Neeraj Yadav	9039976678
+<tr><td>7</td><td>Kabbadi</td>	<td>Prof.Malyaj Das</td>	<td>9630207958</td></tr>
+                <tr>	<td></td><td></td><td>Prof Ashish Bhargav</td>	<td>9425437733</td></tr>
+<tr><td>8</td><td>Kho-Kho</td>	<td>Prof.Dheerj Tiwari</td>	<td>9826093097</td></tr>
+                <tr>	<td></td><td></td><td>Prof.Anshuman Purohit</td>	<td>9926021070</td></tr>
+<tr><td>9</td><td>Athlitics(100,200&400m)</td>	<td>Prof.Jayesh Barve</td>	<td>9425072348</td></tr>
+                <tr>	<td></td><td></td><td>Dr.Shakil Qureshi</td>	<td>9827529975</td></tr>
+<tr><td>10</td><td>Table Tennis</td>	<td>Prof.Sandesh Jain</td>	<td>9713814789</td></tr>
+                <tr>	<td></td><td></td><td>Prof.Neeraj Yadav</td>	<td>9039976678</td></tr>
 Foot Ball (7ASIDE)	Prof.Ruchir Lashkare	9009574161
 	Prof.Gaurav Suryawanshi	9713139745
 SHORTPUT & DISCUS THROW	Prof.Vikas Khare	9098216248
