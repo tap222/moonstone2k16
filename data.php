@@ -14,8 +14,13 @@
 						header("Location: /moonstone2k16/admin.php");
 					}
     ?>
+    
+    <div class="nav-top">
+        <a href="index.html" class="new-logo medi"></a>
+        <a href="#" class="new-logo"></a>
+    </div>
     <div class="bs-example wrapper" data-example-id="default-navbar">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default header">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
