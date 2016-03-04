@@ -1328,13 +1328,15 @@ footer .footer_social ul li i {
 {
     padding: 0px 0px;
     display: flex;
-    box-shadow: 0px -3px 6px rgba(0,0,0,0.9);
-    background: #FFF;
+    background: rgba(0, 0, 0, 0.4);
 }
 .description > .main
 {
     flex: 0.9;
     padding: 50px 50px;
+    box-shadow: 2px -3px 6px rgba(0,0,0,0.9);
+    background: #FFF;
+    z-index: 20;
 }
 .description .heading
 {
@@ -1362,6 +1364,7 @@ footer .footer_social ul li i {
     text-align: right;
     background-color: #6574A9;
     padding: 50px 50px;
+    margin-top: 8px;
     color: #EEE;
 }
 .aside .title
@@ -1404,6 +1407,73 @@ footer .footer_social ul li i {
 @media (max-width: 795px)
 {
     .carousel-caption {
+      top: 10% ;
+    }
+}
+
+.gallery-wrapper
+{
+    overflow: hidden;
+    position: relative;
+}
+.gallery-element
+{
+    height: 200px;
+    /*background: url('https://unsplash.it/400/300?random');*/
+    /*border: 1px solid green;*/
+    position: relative;
+    padding: 0;
+}
+.gallery-element-overlay
+{
+    height: 200px;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+    width: 100%;
+    bottom: -200px;
+    left: 0;
+    transition: 0.3s;
+    color: white;
+    padding: 30px 10px;
+    text-align: right;
+    cursor: pointer;
+}
+.show-overlay
+{
+    bottom: 0;
+}
+.gallery-element-overlay > .title
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.popup-display-backdrop
+{
+    overflow: hidden;
+    position: fixed;
+    display: none;
+}
+.popup-display-wrapper
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: rgba(0,0,0,0.7);
+}
+.popup-display
+{
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    border: 5px solid white;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px)
+{
+    .gallery-element {
       top: 10% ;
     }
 }
