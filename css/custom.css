@@ -1477,3 +1477,37 @@ footer .footer_social ul li i {
       top: 10% ;
     }
 }
+
+.navbar-header
+{
+    position: relative;
+}
+.new-logo.medi
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 20;
+    top: -10px;
+    left: -10px;
+    background: url('../img/medi-logo-white.png');
+    background-size: contain;
+}
+.new-logo
+{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    z-index: 20;
+    top: -22px;
+    right: -10px;
+    background: url('../img/logo.png');
+    background-size: contain;
+}
+.nav-top
+{
+    height: 60px;
+    width: 100%;
+    background: #6574A9;
+}
+
