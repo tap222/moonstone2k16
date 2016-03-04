@@ -14,6 +14,7 @@
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -393,13 +394,13 @@ nav .navbar-right {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
     background-color: transparent;
-    color: #588325;
+    color: #FFF;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #588325;
+    background-color: transparent;
     color: #fff;
 }
 
@@ -1519,11 +1520,25 @@ footer .footer_social ul li i {
     background: #6574A9;
 }
 
+.nav-top > .moonstone
+{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 40%;
+    margin: 0 auto 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #EEE;
+    text-transform: uppercase;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
+}
 
 
-.header {
-    padding-right:25% !important;
-    font-size: 1em;
+
+.navbar-collapse
+{
+    padding-left: 25%;
+    margin: 0;
 }
 .about-wrapper
 {
@@ -1574,4 +1589,12 @@ footer .footer_social ul li i {
     background-color: #AAA;
     margin-bottom: 10px;
 
+}
+
+.carousel-caption > #first-slide-label
+{
+    font-size:3em;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: none;
+    font-weight: 400;
 }
