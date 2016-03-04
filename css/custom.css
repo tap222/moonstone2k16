@@ -1541,6 +1541,11 @@ footer .footer_social ul li i {
     left: 0;
     z-index: -1;
 }
+.about-wrapper .cover > .butn
+{
+    padding-top: 100px;
+    z-index: 100;
+}
 .about-wrapper >.cover-overlay
 {
     height: 350px;
