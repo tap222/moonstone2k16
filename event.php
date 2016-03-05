@@ -15,12 +15,6 @@
     <!-- Add custom CSS here -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <style>
-        body{
-            font-family: Berlin Sans FB;
-
-        }
-    </style>
 </head>
 <body>
 
