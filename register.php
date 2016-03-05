@@ -210,10 +210,85 @@
                 <label>Event<span class='required'>*</span></label>
                 <select type="text" name="event_intrested" value="" placeholder="" class="">
                     <option selected>Select</option>
-                    <option>Event 1</option>
-                    <option>Event 2</option>
-                    <option>Event 3</option>
-                    <option>Event 4</option>
+                             <option>Robotics</option>
+                            
+                                <option>Photography</option>
+
+                                <option>Gaming Box</option>
+
+                                <option>G.K. Quiz</option>
+
+                                <option>Eloquence</option>
+
+                                <option>Art Exhibition</option>
+
+                                <option>Funtakshri</option>
+
+                                <option>Mini Soccer</option>
+
+                                <option>Roadies</option>
+
+                                <option>Photo-Booth</option>
+
+                                <option>Paint-a-toon</option>
+
+                                <option>Face Painting</option>
+
+                                <option>Rangoli</option>
+
+                                <option>Yuva Sabha</option>
+
+                                <option>Just-a-minute</option>
+
+                                <option>BattleCry : Lan Gaming</option>
+
+                                <option>B-Plan</option>
+
+                                <option>Laser Tag</option>
+
+                                <option>Paint Ball</option>
+
+                                <option>Treasure Hunt</option>
+
+                                <option>Chill Room</option>
+
+                                <option>Junkyard</option>
+
+                                <option>Bob-the-builder</option>
+
+                                <option>Funbola</option>
+
+                                <option>Stunt Mania</option>
+
+                                <option>Gali Cricket</option>
+
+
+                            <option>Basket Ball</option>
+
+                        <option>Volley Ball</option>
+
+                        <option>Cricket</option>
+
+                        <option>Chess</option>
+
+                        <option>Cross Country(5000M)</option>
+
+                        <option>Carrom</option>
+
+                        <option>Kabbadi</option>
+
+                        <option>Kho-Kho</option>
+
+                        <option>Athlitics(100,200&400m)</option>
+
+                        <option>Table Tennis</option>
+
+                        <option>Foot Ball (7ASIDE)</option>
+
+                        <option>SHORTPUT & DISCUS THROW</option>
+
+                        <option>Tug-Of-War</option>
+
                 </select>
 
                <input type="submit" style="background: #356535; border:none" value="Submit">
