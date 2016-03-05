@@ -358,6 +358,7 @@ nav .container {
 .navbar-default {
     background-color: #6574A9;
     border-width: 0;
+    transition: 2s ease;
 }
 
 nav ul,
@@ -1159,7 +1160,7 @@ footer .footer_social ul li i {
 }
 .background-image-home
 {
-    transition: 0.5s;
+    transition: 2s;
     background: url("../img/1.jpeg");
     background-position: center;
     min-height: 900px;
@@ -1280,7 +1281,6 @@ footer .footer_social ul li i {
     background: url('../img/1.jpeg');
     background-size: cover;
     background-position: center;
-    transition: 0.5s ease-out;
 }
 
 .event-wrapper
@@ -1456,6 +1456,11 @@ footer .footer_social ul li i {
     font-size: 30px;
     font-weight: bold;
 }
+.popup-container
+{
+    position: absolute;
+    top: -120px;
+}
 .popup-display-backdrop
 {
     overflow: hidden;
@@ -1518,6 +1523,7 @@ footer .footer_social ul li i {
     height: 60px;
     width: 100%;
     background: #6574A9;
+    transition: 2s ease;
 }
 
 .nav-top > .moonstone
@@ -1538,7 +1544,7 @@ footer .footer_social ul li i {
 .navbar-collapse
 {
     padding-left: 25%;
-    margin: 0;
+    padding-top: 5px;
 }
 .about-wrapper
 {
