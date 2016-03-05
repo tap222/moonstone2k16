@@ -1462,6 +1462,7 @@ footer .footer_social ul li i {
 {
     position: absolute;
     top: -120px;
+    z-index: 100;
 }
 .popup-display-backdrop
 {
@@ -1503,7 +1504,7 @@ footer .footer_social ul li i {
     width: 150px;
     height: 150px;
     position: absolute;
-    z-index: 20;
+    z-index: 200;
     top: -10px;
     left: -10px;
     background: url('../img/medi-logo-white.png');
@@ -1514,7 +1515,7 @@ footer .footer_social ul li i {
     width: 160px;
     height: 160px;
     position: absolute;
-    z-index: 20;
+    z-index: 200;
     top: -22px;
     right: -10px;
     background: url('../img/logo.png');
@@ -1539,6 +1540,7 @@ footer .footer_social ul li i {
     color: #EEE;
     text-transform: uppercase;
     text-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
+    z-index: 200;
 }
 
 
