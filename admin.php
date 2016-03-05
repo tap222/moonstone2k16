@@ -7,6 +7,12 @@
     <!-- Add custom CSS here -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+        body{
+            font-family: Berlin Sans FB;
+            
+        }
+    </style>
     </head>
     <body>
         <?php
@@ -20,6 +26,7 @@
                 
     <div class="nav-top">
         <a href="index.html" class="new-logo medi"></a>
+        <a href="index.html" class="text-logo"></a>
         <a href="#" class="new-logo"></a>
     </div>
                 <div class="bs-example wrapper" data-example-id="default-navbar">
@@ -149,8 +156,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Moonstone 2K16</a></li>
-                                <li><a href="#">Medicaps University</a></li>
+                                <li><a href="about-moonstone.html">Moonstone Festival</a></li>
+                                <li><a href="about.html">Medicaps University Indore</a></li>
                             </ul>
                         </li>
                     </ul>

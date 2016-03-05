@@ -1597,6 +1597,19 @@ footer .footer_social ul li i {
 
 }
 
+/*<<<<<<< HEAD
+.text-logo {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    width: 25%;
+    height: 50px;
+    background: url('../img/logo_up.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+=======*/
 .carousel-caption > #first-slide-label
 {
     font-size:3em;

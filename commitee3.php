@@ -15,6 +15,12 @@
     <!-- Add custom CSS here -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{
+            font-family: Berlin Sans FB;
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -23,6 +29,7 @@
     
     <div class="nav-top">
         <a href="index.html" class="new-logo medi"></a>
+        <a href="index.html" class="text-logo"></a>
         <a href="#" class="new-logo"></a>
     </div>
     <div class="bs-example wrapper" data-example-id="default-navbar">
@@ -149,12 +156,12 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Steering Commitee</a></li>
-                                <li><a href="#">Sports Commitee</a></li>
-                                <li><a href="#">Cultural Commitee</a></li>
-                                <li><a href="#">Competition Commitee</a></li>
-                                <li><a href="#">Discipline Commitee</a></li>
-                                <li><a href="#">Media Commitee</a></li>
+                               <li><a href="commitee1.php">Steering Commitee</a></li>
+                                <li><a href="commitee2.php">Sports Commitee</a></li>
+                                <li><a href="commitee3.php">Cultural Commitee</a></li>
+                                <li><a href="commitee4.php">Competition Commitee</a></li>
+                                <li><a href="commitee5.php">Discipline Commitee</a></li>
+                                <li><a href="commitee6.php">Media Commitee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -175,7 +182,7 @@
         <div class="col-xs-12">
             <h1 class="text-center">Cultural Commitee</h1>
             <h3 class="text-center">Faculty Co-ordinator : Dr. Rekha Jain</h3>
-            <table class=" table table-striped ">
+            <table class=" table table-striped text-center">
                 
                 <tr style="font-weight: bold; font-size: 20px;">
                     <td>S. No.</td>
@@ -187,51 +194,51 @@
                 <tr>
                     <td>1</td>
                     <td>Solo Dance</td>
-                    <td>Prof. pratiksha Asati</td>                        
+                    <td>Prof. Pratiksha Asati</td>                        
                     <td>8305672554</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Duet Dance</td>
-                    <td>Prof.Lokendra Chouhan</td>
+                    <td>Prof. Lokendra Chouhan</td>
                     <td>8889345941</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>Group Dance</td>
-                    <td>Prof.Ashish Sharma</td>
+                    <td>Prof. Ashish Sharma</td>
                     <td>7566829693</td>
                 </tr>	
-                <tr><td>4</td><td>Street Battle</td>	<td>Prof.Neha Sahu</td>	<td>9098390985</td></tr>
+                <tr><td>4</td><td>Street Battle</td>	<td>Prof. Neha Sahu</td>	<td>9098390985</td></tr>
                 <tr><td>II</td><td><strong>Music(Symphony) - Faculty: Prof. Aakriti Shastri</strong></td></tr>		
-                <tr><td>1</td><td>Solo(Vocal)</td>	<td>Prof.Akriti Shastri</td>	<td>9826212021</td></tr>
-                <tr><td>2</td><td>Duet(Vocal)</td>	<td>Prof.Vajid Ahmed</td>	<td>9303243560</td></tr>
-                <tr><td>3</td><td>Solo(Instrument)</td>	<td>Prof.Sandeep Lokre</td>	<td>9406628764</td></tr>
-                <tr><td>4</td><td>Duet(Instrument)</td>	<td>Prof.Prabal Jain</td>	<td>9179709512</td></tr>
+                <tr><td>1</td><td>Solo(Vocal)</td>	<td>Prof. Akriti Shastri</td>	<td>9826212021</td></tr>
+                <tr><td>2</td><td>Duet(Vocal)</td>	<td>Prof. Vajid Ahmed</td>	<td>9303243560</td></tr>
+                <tr><td>3</td><td>Solo(Instrument)</td>	<td>Prof. Sandeep Lokre</td>	<td>9406628764</td></tr>
+                <tr><td>4</td><td>Duet(Instrument)</td>	<td>Prof. Prabal Jain</td>	<td>9179709512</td></tr>
                 
                 
-                <tr><td>III</td><td><strong>Fashion Show</strong></td>		<td>Prof.Mohit Badlani</td>	<td>9630066565</td></tr>
-		          <tr><td></td><td></td><td>Prof.Shilpa Sitlani</td>	<td>8871525562</td></tr>
-                <tr><td>IV</td><td><strong>Annual Day</strong></td>	<td>	Dr.Shipra Ahuja Joshi</td>	<td>9993216913</td></tr>
-                <tr><td></td><td></td> <td>   Prof.Prateeksha Asati</td>	<td>8305672554</td></tr>
-                <tr><td></td><td></td>  <td>  Prof.Rinku Verma</td>	<td>9826766770</td></tr>
-                <tr><td></td><td></td>   <td> Prof.Anas Khan</td></tr>	
-                <tr><td></td><td></td>   <td> Dr.Pranita Joshi</td>	<td>9926665944</td></tr>
-                <tr><td>V</td><td><strong>Stage</strong></td>		<td>Prof.Rahul Gupta</td>	<td>9993570019</td></tr>
-                   <tr><td></td><td></td> <td>Prof.Pranita Joshi(Chem.)</td>	<td>9926665944</td></tr>
-                <tr><td></td><td></td> <td> Prof.Yogesh Sharma(Mech.)</td>	<td>9977921400</td></tr>
-                <tr><td></td><td></td> <td> Prof.Ravi Verma(Mech.)</td></tr>	
-                <tr><td></td><td></td> <td> Prof.Sarita Kansal(EC)</td>	<td>9893004933</td></tr>
-                <tr><td></td><td></td> <td> Prof.Rupali Phatak(EC)</td></tr>	
-                <tr><td></td><td></td> <td> Prof.Anas Khan(civil)</td>	
-                <tr><td></td><td></td> <td> Prof.Toshi Bhavsar(civil)</td>	
-                <tr><td></td><td></td> <td> Prof.Latika Malhotra(CS)</td>	<td>9479889242</td></tr>
+                <tr><td>III</td><td><strong>Fashion Show</strong></td>		<td>Prof. Mohit Badlani</td>	<td>9630066565</td></tr>
+		          <tr><td></td><td></td><td>Prof. Shilpa Sitlani</td>	<td>8871525562</td></tr>
+                <tr><td>IV</td><td><strong>Annual Day</strong></td>	<td>	Dr. Shipra Ahuja Joshi</td>	<td>9993216913</td></tr>
+                <tr><td></td><td></td> <td>   Prof. Prateeksha Asati</td>	<td>8305672554</td></tr>
+                <tr><td></td><td></td>  <td>  Prof. Rinku Verma</td>	<td>9826766770</td></tr>
+                <tr><td></td><td></td>   <td> Prof. Anas Khan</td></tr>	
+                <tr><td></td><td></td>   <td> Dr. Pranita Joshi</td>	<td>9926665944</td></tr>
+                <tr><td>V</td><td><strong>Stage</strong></td>		<td>Prof. Rahul Gupta</td>	<td>9993570019</td></tr>
+                   <tr><td></td><td></td> <td>Prof. Pranita Joshi(Chem.)</td>	<td>9926665944</td></tr>
+                <tr><td></td><td></td> <td> Prof. Yogesh Sharma(Mech.)</td>	<td>9977921400</td></tr>
+                <tr><td></td><td></td> <td> Prof. Ravi Verma(Mech.)</td></tr>	
+                <tr><td></td><td></td> <td> Prof. Sarita Kansal(EC)</td>	<td>9893004933</td></tr>
+                <tr><td></td><td></td> <td> Prof. Rupali Phatak(EC)</td></tr>	
+                <tr><td></td><td></td> <td> Prof. Anas Khan(civil)</td>	
+                <tr><td></td><td></td> <td> Prof. Toshi Bhavsar(civil)</td>	
+                <tr><td></td><td></td> <td> Prof. Latika Malhotra(CS)</td>	<td>9479889242</td></tr>
                 <tr><td></td><td></td> <td> Dr. Renuka Rathore(maths)</td>	<td>9425940402</td></tr>
-                <tr><td>VI</td><td><strong>Welcome Committee</strong></td>		<td>Prof.Amit Sharma</td>	<td>9826221110</td></tr>
-                  <tr><td></td><td></td> <td> Prof.Amrita Mantri</td>	<td>9827588334</td></tr>
-                <tr><td></td><td></td> <td> Prof.Swati Tahiliani</td>	<td>9755430681</td></tr>
+                <tr><td>VI</td><td><strong>Welcome Committee</strong></td>		<td>Prof. Amit Sharma</td>	<td>9826221110</td></tr>
+                  <tr><td></td><td></td> <td> Prof. Amrita Mantri</td>	<td>9827588334</td></tr>
+                <tr><td></td><td></td> <td> Prof. Swati Tahiliani</td>	<td>9755430681</td></tr>
                 <tr><td></td><td></td> <td> Prof. Anshul Shrivastav</td>	<td>9993556641</td></tr>
-            <tr><td>VII</td><td><strong>DJ Night</strong></td>		<td>Dr.Shakil Qureshi</td>	<td>9827529975</td></tr>
+            <tr><td>VII</td><td><strong>DJ Night</strong></td>		<td>Dr. Shakil Qureshi</td>	<td>9827529975</td></tr>
                 <tr><td></td><td></td> <td>Prof. Ankush Saklecha</td>	<td>9685285381</td></tr>
 
             
