@@ -15,6 +15,12 @@
     <!-- Add custom CSS here -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{
+            font-family: Berlin Sans FB;
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -23,6 +29,7 @@
    
     <div class="nav-top">
         <a href="index.html" class="new-logo medi"></a>
+        <a href="index.html" class="text-logo"></a>
         <a href="#" class="new-logo"></a>
     </div>
     <div class="bs-example wrapper" data-example-id="default-navbar">
@@ -149,12 +156,12 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Steering Commitee</a></li>
-                                <li><a href="#">Sports Commitee</a></li>
-                                <li><a href="#">Cultural Commitee</a></li>
-                                <li><a href="#">Competition Commitee</a></li>
-                                <li><a href="#">Discipline Commitee</a></li>
-                                <li><a href="#">Media Commitee</a></li>
+                                <li><a href="commitee1.php">Steering Commitee</a></li>
+                                <li><a href="commitee2.php">Sports Commitee</a></li>
+                                <li><a href="commitee3.php">Cultural Commitee</a></li>
+                                <li><a href="commitee4.php">Competition Commitee</a></li>
+                                <li><a href="commitee5.php">Discipline Commitee</a></li>
+                                <li><a href="commitee6.php">Media Commitee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -175,7 +182,7 @@
         <div class="col-xs-12">
             <h1 class="text-center">Sports Commitee</h1>
             <h3 class="text-center">Faculty Co-ordinator : Dr. Yogesh pandya</h3>
-            <table class="table table-striped ">
+            <table class="table table-striped text-center ">
                 <tr style="font-weight: bold; font-size: 20px;">
                     <td>S. No.</td>
                     <td>Name of Event</td>
@@ -202,12 +209,12 @@
                 <tr>	<td></td><td></td><td>Dr.Shakil Qureshi</td>	<td>9827529975</td></tr>
 <tr><td>10</td><td>Table Tennis</td>	<td>Prof.Sandesh Jain</td>	<td>9713814789</td></tr>
                 <tr>	<td></td><td></td><td>Prof.Neeraj Yadav</td>	<td>9039976678</td></tr>
-Foot Ball (7ASIDE)	Prof.Ruchir Lashkare	9009574161
-	Prof.Gaurav Suryawanshi	9713139745
-SHORTPUT & DISCUS THROW	Prof.Vikas Khare	9098216248
-	Prof.Sanjeev Jain	9827282120
-Tug-Of-War	Prof.Vineet Gupta	9826564798
-	Prof.Santosh Raghuwanshi	9098967788
+<tr><td>11</td><td>Foot Ball (7ASIDE)</td>	<td>Prof.Ruchir Lashkare</td>	<td>9009574161</td></tr>
+                <tr>	<td></td><td></td><td>Prof.Gaurav Suryawanshi</td>	<td>9713139745</td></tr>
+<tr><td>12</td><td>SHORTPUT & DISCUS THROW</td>	<td>Prof.Vikas Khare</td>	<td>9098216248</td></tr>
+                <tr>	<td></td><td></td><td>Prof.Sanjeev Jain</td>	<td>9827282120</td></tr>
+<tr><td>13</td><td>Tug-Of-War</td>	<td>Prof.Vineet Gupta</td>	<td>9826564798</td></tr>
+                <tr>	<td></td><td></td><td>Prof.Santosh Raghuwanshi</td>	<td>9098967788</td></tr>
 
             </table>
         </div>

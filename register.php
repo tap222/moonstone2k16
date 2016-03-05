@@ -24,13 +24,19 @@
     <!--Importing the required javascripts -->
     <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-
+    <style>
+        body{
+            font-family: Berlin Sans FB;
+            
+        }
+    </style>
 </head>
 <body>
     <!--header table start-->
     
-    <div class="nav-top">
+   <div class="nav-top">
         <a href="index.html" class="new-logo medi"></a>
+        <a href="index.html" class="text-logo"></a>
         <a href="#" class="new-logo"></a>
     </div>
     <div class="bs-example wrapper" data-example-id="default-navbar">
@@ -38,17 +44,20 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" class="img-responsive"></a>
+                    <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" class="img-responsive"></a> -->
+                    <div class="nabar-brand"></div>
+                    <!-- <span>MOONSTONE 2K16</span> -->
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <form class="navbar-form navbar-right" role="search">
+                   <!--  <form class="navbar-form navbar-right" role="search">
                         <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
 
                         <div class="form-group">
                             <input class="form-control" placeholder="Search Events" type="text">
                         </div>
-                    </form>
+                    </form> -->
 
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -146,29 +155,6 @@
                                     <li class="element"><a href="#">Kabaddi</a></li>
                                     </ul>
                                 </li>
-                                <li class="mega-menu-column">
-                                    <ul>
-                                        <li class="nav-header">Day 4</li>
-                                        <li class="element"><a href="#">Symphony </a></li>
-                                         <li class="element"><a href="#">The Game Of Bots</a></li>
-                                         <li class="element"><a href="#">Grandeur(PG)</a></li>
-                                         <li class="element"><a href="#">Mimicry</a></li>
-
-                                         <li class="element"><a href="#">Salad On Diet</a></li>
-                                         <li class="element"><a href="#">Sport-O-Spark</a></li>
-                                         <li class="element"><a href="#">Mini Soccer</a></li>
-                                         <li class="element"><a href="#">Dance Competition</a></li>
-                                         <li class="element"><a href="#">Photobooth</a></li>
-                                         <li class="element"><a href="#">Gyan Prayag</a></li>
-
-                                         <li class="element"><a href="#">Me-Di Buggers</a></li>
-                                         <li class="element"><a href="#">Cricket</a></li>
-                                         <li class="element"><a href="#">Chess & Carrom </a></li>
-                                         <li class="element"><a href="#">Cross Country</a></li>
-                                         <li class="element"><a href="#">Kho-Kho</a></li>
-                                         <li class="element"><a href="#">Kabaddi</a></li>
-                                    </ul>
-                                </li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -177,20 +163,19 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                                        <li><a href="commitee1.php">Steering Commitee</a></li>
+                                <li><a href="commitee1.php">Steering Commitee</a></li>
                                 <li><a href="commitee2.php">Sports Commitee</a></li>
                                 <li><a href="commitee3.php">Cultural Commitee</a></li>
                                 <li><a href="commitee4.php">Competition Commitee</a></li>
                                 <li><a href="commitee5.php">Discipline Commitee</a></li>
                                 <li><a href="commitee6.php">Media Commitee</a></li>
-        
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Moonstone Festival</a></li>
-                                <li><a href="#">Medicaps University Indore</a></li>
+                                <li><a href="about-moonstone.html">Moonstone Festival</a></li>
+                                <li><a href="about.html">Medicaps University Indore</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -242,7 +227,7 @@
                         }
                         else
                         {
-                            echo 'Connection Successful!<br> ';
+                            
                             }
     
                 
