@@ -117,7 +117,8 @@
                                     <li class="element"><a href="event.php?eventno=46">Symphony Duet(Vocal)</a></li>
                                     <li class="element"><a href="event.php?eventno=47">Symphony Solo(Instrumental)</a></li>
                                     <li class="element"><a href="event.php?eventno=48">Symphony Duet(Instrumental)</a></li>
-                                
+                                	<li class="element"><a href="event.php?eventno=49">Art Exihibition</a></li>
+                                		<li class="element"><a href="event.php?eventno=50">Medicaps Got Talent</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -126,14 +127,14 @@
                             <a href="gallery.html" class="dropdown-toggle">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Committees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="commitee1.php">Steering Commitee</a></li>
-                                <li><a href="commitee2.php">Sports Commitee</a></li>
-                                <li><a href="commitee3.php">Cultural Commitee</a></li>
-                                <li><a href="commitee4.php">Competition Commitee</a></li>
-                                <li><a href="commitee5.php">Discipline Commitee</a></li>
-                                <li><a href="commitee6.php">Media Commitee</a></li>
+                                <li><a href="commitee1.php">Steering Committee</a></li>
+                                <li><a href="commitee2.php">Sports Committee</a></li>
+                                <li><a href="commitee3.php">Cultural Committee</a></li>
+                                <li><a href="commitee4.php">Competition Committee</a></li>
+                                <li><a href="commitee5.php">Discipline Committee</a></li>
+                                <li><a href="commitee6.php">Media Committee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -151,7 +152,7 @@
 
     <div class="row" style="padding-bottom: 200px;">
         <div class="col-xs-12">
-            <h1 class="text-center">Cultural Commitee</h1>
+            <h1 class="text-center">Cultural Committee</h1>
             <h3 class="text-center">Faculty Co-ordinator : Dr. Rekha Jain</h3>
             <table class=" table table-striped text-center">
                 
@@ -195,20 +196,7 @@
                 <tr><td></td><td></td>  <td>  Prof. Rinku Verma</td>	<td>9826766770</td></tr>
                 <tr><td></td><td></td>   <td> Prof. Anas Khan</td></tr>	
                 <tr><td></td><td></td>   <td> Dr. Pranita Joshi</td>	<td>9926665944</td></tr>
-                <tr><td>V</td><td><strong>Stage</strong></td>		<td>Prof. Rahul Gupta</td>	<td>9993570019</td></tr>
-                   <tr><td></td><td></td> <td>Prof. Pranita Joshi(Chem.)</td>	<td>9926665944</td></tr>
-                <tr><td></td><td></td> <td> Prof. Yogesh Sharma(Mech.)</td>	<td>9977921400</td></tr>
-                <tr><td></td><td></td> <td> Prof. Ravi Verma(Mech.)</td></tr>	
-                <tr><td></td><td></td> <td> Prof. Sarita Kansal(EC)</td>	<td>9893004933</td></tr>
-                <tr><td></td><td></td> <td> Prof. Rupali Phatak(EC)</td></tr>	
-                <tr><td></td><td></td> <td> Prof. Anas Khan(civil)</td>	
-                <tr><td></td><td></td> <td> Prof. Toshi Bhavsar(civil)</td>	
-                <tr><td></td><td></td> <td> Prof. Latika Malhotra(CS)</td>	<td>9479889242</td></tr>
-                <tr><td></td><td></td> <td> Dr. Renuka Rathore(maths)</td>	<td>9425940402</td></tr>
-                <tr><td>VI</td><td><strong>Welcome Committee</strong></td>		<td>Prof. Amit Sharma</td>	<td>9826221110</td></tr>
-                  <tr><td></td><td></td> <td> Prof. Amrita Mantri</td>	<td>9827588334</td></tr>
-                <tr><td></td><td></td> <td> Prof. Swati Tahiliani</td>	<td>9755430681</td></tr>
-                <tr><td></td><td></td> <td> Prof. Anshul Shrivastav</td>	<td>9993556641</td></tr>
+                
             <tr><td>VII</td><td><strong>DJ Night</strong></td>		<td>Dr. Shakil Qureshi</td>	<td>9827529975</td></tr>
                 <tr><td></td><td></td> <td>Prof. Ankush Saklecha</td>	<td>9685285381</td></tr>
 

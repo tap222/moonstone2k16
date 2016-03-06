@@ -1,0 +1,15 @@
+<form class="navbar-form navbar-right" role="search" action="admin.php" method="post">
+                        <select name="logout" style="display:none">
+                            <option selected>Logout</option>
+                        </select>
+                        <button style="background: crimson; border-color:crimson; height:40px; border-radius:5px;" type="submit"><strong>Logout</strong></button>
+                        <?php
+                            if(isset($_POST['logout']))
+                            {
+                                session_start();
+                                unset($_SESSION['user']);
+                            }
+                            
+                        ?>
+
+                    </form>

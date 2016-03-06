@@ -117,14 +117,14 @@
                             <a href="gallery.html" class="dropdown-toggle">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Committees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="commitee1.php">Steering Commitee</a></li>
-                                <li><a href="commitee2.php">Sports Commitee</a></li>
-                                <li><a href="commitee3.php">Cultural Commitee</a></li>
-                                <li><a href="commitee4.php">Competition Commitee</a></li>
-                                <li><a href="commitee5.php">Discipline Commitee</a></li>
-                                <li><a href="commitee6.php">Media Commitee</a></li>
+                                <li><a href="commitee1.php">Steering Committee</a></li>
+                                <li><a href="commitee2.php">Sports Committee</a></li>
+                                <li><a href="commitee3.php">Cultural Committee</a></li>
+                                <li><a href="commitee4.php">Competition Committee</a></li>
+                                <li><a href="commitee5.php">Discipline Committee</a></li>
+                                <li><a href="commitee6.php">Media Committee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -145,13 +145,13 @@
         </div>
         <div class="cover-overlay" style="background-image: url(<?php
 
-                       if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                       if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
                         else
                         {
-
+		
                         }
                         $eventno = $_GET['eventno'];
                         $query2 = "SELECT img_loc from Event WHERE Sno = '$eventno'";
@@ -169,7 +169,7 @@
             <div class="event-title" >
                 <span><?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -180,15 +180,18 @@
 
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT Name from Event WHERE Sno= '$eventno' ";
+                        $query1 = "SELECT Event_name from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $name = $query_row['Name'];
+                                $name = $query_row['Event_name'];
                                 echo $name;
 
                             }
+                        }
+                        else{
+                        	echo 'Coming Soon!!!';
                         }
                     }
 
@@ -198,7 +201,7 @@
                 <div class="date">
                     Day <?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -208,12 +211,12 @@
                         }
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT Day from Event WHERE Sno= '$eventno' ";
+                        $query1 = "SELECT days from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $Day = $query_row['Day'];
+                                $Day = $query_row['days'];
                                 echo $Day;
 
                             }
@@ -222,7 +225,7 @@
 
                     ?> - <?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -232,12 +235,12 @@
                         }
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT Date from Event WHERE Sno= '$eventno' ";
+                        $query1 = "SELECT date from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $Date = $query_row['Date'];
+                                $Date = $query_row['date'];
                                 echo $Date;
 
                             }
@@ -247,9 +250,10 @@
                     ?>
                 </div>
                 <div class="time">
+                Time : 
                     <?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -259,12 +263,12 @@
                         }
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT Time from Event WHERE Sno= '$eventno' ";
+                        $query1 = "SELECT time from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $Time = $query_row['Time'];
+                                $Time = $query_row['time'];
                                 echo $Time;
 
                             }
@@ -284,7 +288,7 @@
                 <div class="venue-content">
                     <?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -294,15 +298,18 @@
                         }
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT Venue from Event WHERE Sno= '$eventno' ";
+                        $query1 = "SELECT venue from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $Venue = $query_row['Venue'];
+                                $Venue = $query_row['venue'];
                                 echo $Venue;
 
                             }
+                        }
+                        else{
+                        	echo 'Stay tuned for details';
                         }
                     }
 
@@ -314,7 +321,7 @@
                 <div class="description-content">
                     <?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -324,15 +331,18 @@
                         }
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT Description from Event WHERE Sno= '$eventno' ";
+                        $query1 = "SELECT descript from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $Description = $query_row['Description'];
+                                $Description = $query_row['descript'];
                                 echo $Description;
 
                             }
+                        }
+                        else{
+                        	echo 'Stay tuned for details';
                         }
                     }
 
@@ -346,7 +356,7 @@
                                                     </div>
             </div><br>
 
-            <div class="aside" style="color:black">
+            <div class="aside">
                 <div class="vertical-separator">
 
                 </div>
@@ -355,7 +365,7 @@
                     <div class="contents">
                         <?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -365,12 +375,12 @@
                         }
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT * from Event WHERE Sno= '$eventno' ";
+                        $query1 = "SELECT faculty from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $head = $query_row['Head Faculty'];
+                                $head = $query_row['faculty'];
                                 echo $head;
 
                             }
@@ -386,7 +396,7 @@
                     <div class="contents">
                         <?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -396,13 +406,14 @@
                         }
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT * from org_commitee WHERE Event_id= '$eventno' ";
+                        $query1 = "SELECT student_1, student_2 from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $OC_Name = $query_row['Name'];
-                                echo $OC_Name.'<br>';
+                                $OC_Name1 = $query_row['student_1'];
+                                $OC_Name2 = $query_row['student_2'];
+                                echo $OC_Name1.'<br>'.$OC_Name2.'<br>';
 
                             }
                         }
@@ -415,7 +426,7 @@
                     <div class="title">Contact</div>
                     <?php
 
-                    if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                    if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -425,19 +436,28 @@
                         }
                     $eventno = $_GET['eventno'];
                     {
-                        $query1 = "SELECT Contact from Event WHERE Sno= '$eventno' ";
+                        $query1 = "SELECT contact_1, contact_2 from event_data WHERE Sno= '$eventno' ";
                         if($query_run = mysql_query($query1))
                         {
                             while($query_row = mysql_fetch_assoc($query_run))
                             {
-                                $Contact = $query_row['Contact'];
-                                echo $Contact;
+                                $Contact1 = $query_row['contact_1'];
+                                $Contact2 = $query_row['contact_2'];
+                                echo $Contact1.'<br>'.$Contact2.'<br>';
 
                             }
                         }
                     }
 
                     ?>
+                </div>
+                <div class="Fee">
+                    <div class="title">Fee</div>
+                    Stay Tuned
+                </div>     
+                <div class="Prizes">
+                    <div class="title">Prizes</div>
+                    Stay Tuned                    
                 </div>
             </div>
         </div>

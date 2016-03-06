@@ -117,7 +117,8 @@
                                     <li class="element"><a href="event.php?eventno=46">Symphony Duet(Vocal)</a></li>
                                     <li class="element"><a href="event.php?eventno=47">Symphony Solo(Instrumental)</a></li>
                                     <li class="element"><a href="event.php?eventno=48">Symphony Duet(Instrumental)</a></li>
-                                
+                                	<li class="element"><a href="event.php?eventno=49">Art Exihibition</a></li>
+                                		<li class="element"><a href="event.php?eventno=50">Medicaps Got Talent</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -126,14 +127,14 @@
                             <a href="gallery.html" class="dropdown-toggle">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Committees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="commitee1.php">Steering Commitee</a></li>
-                                <li><a href="commitee2.php">Sports Commitee</a></li>
-                                <li><a href="commitee3.php">Cultural Commitee</a></li>
-                                <li><a href="commitee4.php">Competition Commitee</a></li>
-                                <li><a href="commitee5.php">Discipline Commitee</a></li>
-                                <li><a href="commitee6.php">Media Commitee</a></li>
+                                <li><a href="commitee1.php">Steering Committee</a></li>
+                                <li><a href="commitee2.php">Sports Committee</a></li>
+                                <li><a href="commitee3.php">Cultural Committee</a></li>
+                                <li><a href="commitee4.php">Competition Committee</a></li>
+                                <li><a href="commitee5.php">Discipline Committee</a></li>
+                                <li><a href="commitee6.php">Media Committee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -150,12 +151,9 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-12">
-            <h1 class="text-center">Discipline Commitee</h1>
-            <table class="table">
-                
-            
-            </table>
+        <div class="col-xs-offset-2 col-xs-8">
+            <h1 class="text-center">Discipline Committee</h1><br><br>
+            	<h3 class="text-center">Prof. S.C. Bhatnagar (Head of Department, Mathematics, MITM)</h3>
         </div>
     </div>
 <footer class="row">

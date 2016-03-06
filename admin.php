@@ -1,3 +1,9 @@
+<?php
+            ob_start();
+            session_start();
+            $_SESSION["user"]="home";
+
+        ?>
 <!DOCTYPE html> 
 <html>
     <head>
@@ -15,12 +21,7 @@
     </style>
     </head>
     <body>
-        <?php
-            ob_start();
-            session_start();
-            $_SESSION["user"]="home";
-
-        ?>
+        
         <div class="row">
             <div class='col-xs-12'>
                 
@@ -114,7 +115,8 @@
                                     <li class="element"><a href="event.php?eventno=46">Symphony Duet(Vocal)</a></li>
                                     <li class="element"><a href="event.php?eventno=47">Symphony Solo(Instrumental)</a></li>
                                     <li class="element"><a href="event.php?eventno=48">Symphony Duet(Instrumental)</a></li>
-                                
+                                	<li class="element"><a href="event.php?eventno=49">Art Exihibition</a></li>
+                                		<li class="element"><a href="event.php?eventno=50">Medicaps Got Talent</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -185,7 +187,8 @@
 
                              </div>
                         <?php
-                                if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                                if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
+
                             {
                                 echo 'The is a problem with the server, please try again later.<br>';
                             }
@@ -201,7 +204,7 @@
 												require 'testinput.inc.php';
 												$user =(string)test_input($_POST['username']);
 												$password = test_input($_POST['password']);
-												$mysqli = mysqli_connect('localhost', 'root', '', 'moonstone2k16');
+												$mysqli = mysqli_connect('localhost', 'moonston_user', 'user_password', 'moonston_moonstone2k16');
 												$query = "SELECT * FROM login WHERE username = '$user'";
 												
 												//Execution	 of SQL
@@ -214,29 +217,25 @@
 														$usertype = $row['type'];
 														$mysqli->close();
 														$_SESSION["user"]=$user;
-												        header("Location: /moonstone2k16/data.php");
+												        header("Location: data.php");
 															
-													}	else { echo "Incorrect password<br>"; }
+													}	else { echo "Incorrect Credentials<br>"; }
 
 												}
 												else 
 										{
-											echo 'You are not a valid user. Please Signup First!!!!';
+											echo 'You are not a valid user. Contact Master Adminstrators for Access';
 										}
 												
-										if(($_POST['username']=='admin') && ($_POST['password']=='admin'))
+										
+										 if(($_POST['username']=='Ashish') && $_POST['password']=='q7w8e9a4')
 										{
 											$_SESSION["user"]=$user;
-											header("Location: /moonstone2k16/data.php");
-										}
-										else if(($_POST['username']=='Ashish') && $_POST['password']=='q7w8e9a4')
-										{
-											$_SESSION["user"]=$user;
-											header("Location: /moonstone2k16/data.php");
+											header("Location: data.php");
 										}
                                         
 										
-										echo 'You are not a valid user. Please Signup First!!!!.<br>';
+										echo 'You are not a valid user. Contact Master Adminstrators for Access.<br>';
 									}
 									else{
 										echo 'Please enter your login credentials';

@@ -32,7 +32,7 @@ jQuery(document).ready(function($)
 {
     slideShow();
     addImages();
-
+    $('.navbar-default').css('background', '#6574A9');
     $('.gallery-element').hover(function(){
         $(this).children().first().toggleClass('show-overlay');
     });

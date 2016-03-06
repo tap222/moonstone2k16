@@ -117,7 +117,8 @@
                                     <li class="element"><a href="event.php?eventno=46">Symphony Duet(Vocal)</a></li>
                                     <li class="element"><a href="event.php?eventno=47">Symphony Solo(Instrumental)</a></li>
                                     <li class="element"><a href="event.php?eventno=48">Symphony Duet(Instrumental)</a></li>
-                                
+                                	<li class="element"><a href="event.php?eventno=49">Art Exihibition</a></li>
+                                		<li class="element"><a href="event.php?eventno=50">Medicaps Got Talent</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -126,14 +127,14 @@
                             <a href="gallery.html" class="dropdown-toggle">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Committees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="commitee1.php">Steering Commitee</a></li>
-                                <li><a href="commitee2.php">Sports Commitee</a></li>
-                                <li><a href="commitee3.php">Cultural Commitee</a></li>
-                                <li><a href="commitee4.php">Competition Commitee</a></li>
-                                <li><a href="commitee5.php">Discipline Commitee</a></li>
-                                <li><a href="commitee6.php">Media Commitee</a></li>
+                                <li><a href="commitee1.php">Steering Committee</a></li>
+                                <li><a href="commitee2.php">Sports Committee</a></li>
+                                <li><a href="commitee3.php">Cultural Committee</a></li>
+                                <li><a href="commitee4.php">Competition Committee</a></li>
+                                <li><a href="commitee5.php">Discipline Committee</a></li>
+                                <li><a href="commitee6.php">Media Committee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -150,18 +151,38 @@
     </div>
 
     <div class="row" style="margin-bottom:250px;">
-        <div class="col-xs-12">
-            <h1 class="text-center">Steering Commitee</h1>
-            <table class=" table table-striped text-center " style="padding:30px">
+        <div class="col-xs-offset-2 col-xs-8">
+            <h1 class="text-center">Steering Committee</h1>
+            <table class=" table table-striped text-left " style="padding:30px">
                 
-                <tr>
+                <tr style="font-weight:bold">
                     <td>S. No.</td>
-                    <td>Name of Event</td>
-                    <td>Faculty Co-ordinator</td>
-                    <td>Contact No.</td>
+                    <td>Name</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>1</td>
+                    <td>Dr. Shamsher Singh</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dr. Sunil K. Somani</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dr. Raj Kamal</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dr. Manmeet Singh</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Dr. Pramod S. Nair (Event Co-ordinator MoonStone 2k16)</td>
+                    
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Shri Rahul Gupta</td>
                 </tr>
         </div>
     </div>

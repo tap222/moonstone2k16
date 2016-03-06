@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^moonstonemedicaps\.co\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.moonstonemedicaps\.co\.in$
+RewriteRule ^/?$ "http\:\/\/moonstonemedicaps\.co\.in\/index\.html" [R=301,L]
+

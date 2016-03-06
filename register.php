@@ -124,7 +124,8 @@
                                     <li class="element"><a href="event.php?eventno=46">Symphony Duet(Vocal)</a></li>
                                     <li class="element"><a href="event.php?eventno=47">Symphony Solo(Instrumental)</a></li>
                                     <li class="element"><a href="event.php?eventno=48">Symphony Duet(Instrumental)</a></li>
-                                
+                                	<li class="element"><a href="event.php?eventno=49">Art Exihibition</a></li>
+                                		<li class="element"><a href="event.php?eventno=50">Medicaps Got Talent</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -133,14 +134,14 @@
                             <a href="gallery.html" class="dropdown-toggle">Gallery</b></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commitees <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Committees <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="commitee1.php">Steering Commitee</a></li>
-                                <li><a href="commitee2.php">Sports Commitee</a></li>
-                                <li><a href="commitee3.php">Cultural Commitee</a></li>
-                                <li><a href="commitee4.php">Competition Commitee</a></li>
-                                <li><a href="commitee5.php">Discipline Commitee</a></li>
-                                <li><a href="commitee6.php">Media Commitee</a></li>
+                                <li><a href="commitee1.php">Steering Committee</a></li>
+                                <li><a href="commitee2.php">Sports Committee</a></li>
+                                <li><a href="commitee3.php">Cultural Committee</a></li>
+                                <li><a href="commitee4.php">Competition Committee</a></li>
+                                <li><a href="commitee5.php">Discipline Committee</a></li>
+                                <li><a href="commitee6.php">Media Committee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -162,26 +163,34 @@
         <div class="container">
             <form action="register.php" method="post" accept-charset="utf-8" class="form-group">
                 <label>Name<span class='required'>*</span></label>
-                <input type="text" name="name_of_person" value="" placeholder="" class="">
+                <input type="text" name="name_of_person" value="" placeholder="" required class="">
                 <label>Gender<span class='required'>*</span></label>
                 <select type="text" name="gender" value="" placeholder="" class="">
-                    <option selected>Select</option>
                     <option>Male</option>
                     <option>Female</option>
                 </select>
                 <label>Email<span class='required'>*</span></label>
-                <input type="email" name="email_of_person" value="" placeholder="" class="">
+                <input type="email" name="email_of_person" value="" placeholder="" required class="">
+
                 <label>Phone<span class='required'>*</span></label>
-                <input type="text" name="phone_of_person" value="" placeholder="" class="">
+                <input type="text" name="phone_of_person" value="" placeholder="" class="" pattern="[0-9]{10}" title="10 digit phone number" required>
+
                 <label>College<span class='required'>*</span></label>
-                <input type="text" name="college_of_person" value="" placeholder="" class="">
-                <label>Branch</label>
-                <input type="text" name="branch_of_person" value="" placeholder="" class="">
-                <label>Year</label>
-                <input type="text" name="year_of_person" value="" placeholder="" class="">
+                <input type="text" name="college_of_person" value="" placeholder="" class="" required>
+
+                <label>Branch<span class='required'>*</span></label>
+                <input type="text" name="branch_of_person" value="" placeholder="" class="" required>
+
+                <label>Year<span class='required'>*</span></label>
+                <select type="text" name="year_of_person" value="" placeholder="" class="" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+
                 <label>Event<span class='required'>*</span></label>
-                <select type="text" name="event_intrested" value="" placeholder="" class="">
-                    <option selected>Select</option>
+                <select type="text" name="event_intrested" value="" placeholder="" class="" required>
                              <option>Robotics</option>
                             
                                 <option>Photography</option>
@@ -260,6 +269,16 @@
                         <option>SHORTPUT & DISCUS THROW</option>
 
                         <option>Tug-Of-War</option>
+                        <option>Symphony (Vocal Solo)</option>
+                        <option>Symphony (Vocal Duet)</option>
+                        <option>Symphony (Instrumental Solo)</option>
+                        <option>Symphony (Instrumental Duet)</option>
+                        <option>Symphony (Band)</option>
+                        <option>Solo Dance</option>
+                        <option>Group Dance</option>
+                        <option>Duet Dance</option>
+                        <option>Street Battle</option>
+                        <option>Medicaps Got Talent</option>
 
                 </select>
 
@@ -268,7 +287,7 @@
                  <?php
 
 
-                        if(!@mysql_connect('localhost','root','') || !@mysql_select_db('moonstone2k16'))
+                        if(!@mysql_connect('localhost','moonston_user','user_password') || !@mysql_select_db('moonston_moonstone2k16'))
                         {
                             echo 'The is a problem with the server, please try again later.<br>';
                         }
@@ -291,16 +310,16 @@
                         if(!empty($name) && !empty($email) && !empty($phone)&& !empty($college)&& !empty($branch)&& !empty($year)&& !empty($eventin)){
                             $query1 = "INSERT into registration VALUES ('', '$name' , '$email' , '$phone', '$college', '$branch' , '$year' , '$eventin', '$gender')";
                             if(@mysql_query($query1)){
-                                echo 'Data Submitted';
+                                echo '<span style="color:white; font-size:40px;">Data Submitted<span>';
                             }
                             else
                             {
-                                echo 'Submission Failed';
+                                echo '<span style="color:white;font-size:40px;">Submission Failed<span>';
                             }
                         }
                         else
                         {
-                            echo 'Fill form';
+                            echo '<span style="color:white;font-size:40px;">Check Necessary Fields<span>';
                         }
                     }
 
